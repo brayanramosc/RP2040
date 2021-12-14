@@ -24,9 +24,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/a
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -58,9 +58,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -140,9 +140,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -174,9 +174,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -208,9 +208,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -242,9 +242,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/mi
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -276,9 +276,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -310,9 +310,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/ecm
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -344,9 +344,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/ncm
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -378,9 +378,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -412,9 +412,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -446,9 +446,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/class/video/v
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -506,9 +506,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_f
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/assert.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -559,9 +559,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -648,9 +648,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_c
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -736,9 +736,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/portable/rasp
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -825,9 +825,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/portable/rasp
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -902,9 +902,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -987,9 +987,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_sync/critical
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1026,9 +1026,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_sync/lock_cor
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1066,9 +1066,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1106,9 +1106,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.ob
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1173,9 +1173,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_time/time.c.o
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/assert.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1218,9 +1218,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_time/timeout_
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1254,9 +1254,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_util/datetime
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1327,9 +1327,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1370,9 +1370,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_util/queue.c.
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1408,9 +1408,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/a
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1453,9 +1453,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_claim
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1487,9 +1487,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_clock
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1541,9 +1541,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_flash
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1579,9 +1579,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1623,9 +1623,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/i
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1667,9 +1667,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/p
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1708,9 +1708,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1743,9 +1743,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_timer
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1784,9 +1784,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1828,9 +1828,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1884,9 +1884,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_watch
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1919,9 +1919,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1958,9 +1958,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/b
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1999,9 +1999,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_double/do
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2059,9 +2059,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp204
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2117,9 +2117,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_float/flo
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2201,9 +2201,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pi
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2231,9 +2231,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2289,9 +2289,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_printf/pr
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_printf/include/pico/printf.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/error.h
@@ -2336,9 +2336,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/r
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2393,9 +2393,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_standard_
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/config.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/machine/ieeefp.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2475,9 +2475,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/std
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2548,9 +2548,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/assert.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2640,9 +2640,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/assert.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2733,9 +2733,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/assert.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2792,9 +2792,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/st
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2851,9 +2851,9 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2864,7 +2864,7 @@ CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h
 
 CMakeFiles/main.dir/adc.c.obj
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/adc.c
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/adc.c
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdio.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/_ansi.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/newlib.h
@@ -2903,9 +2903,9 @@ CMakeFiles/main.dir/adc.c.obj
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -2936,10 +2936,10 @@ CMakeFiles/main.dir/adc.c.obj
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/adc.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/adc.h
 
 CMakeFiles/main.dir/main.c.obj
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/main.c
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/main.c
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdio.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/_ansi.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/newlib.h
@@ -2978,9 +2978,9 @@ CMakeFiles/main.dir/main.c.obj
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -3005,12 +3005,12 @@ CMakeFiles/main.dir/main.c.obj
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/serialUtils.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/timer.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/adc.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/serialUtils.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/timer.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/adc.h
 
 CMakeFiles/main.dir/serialUtils.c.obj
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/serialUtils.c
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/serialUtils.c
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdio.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/_ansi.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/newlib.h
@@ -3049,9 +3049,9 @@ CMakeFiles/main.dir/serialUtils.c.obj
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -3076,10 +3076,10 @@ CMakeFiles/main.dir/serialUtils.c.obj
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/serialUtils.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/serialUtils.h
 
 CMakeFiles/main.dir/timer.c.obj
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/timer.c
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/timer.c
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h
@@ -3098,9 +3098,9 @@ CMakeFiles/main.dir/timer.c.obj
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_intsup.h
  C:/RPPicoSDK/armcc/10 2021.10/arm-none-eabi/include/sys/_stdint.h
  C:/RPPicoSDK/armcc/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/version.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/generated/pico_base/pico/config_autogen.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -3126,5 +3126,5 @@ CMakeFiles/main.dir/timer.c.obj
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
- D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/timer.h
+ D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/timer.h
 

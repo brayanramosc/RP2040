@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/serialUtils.c.obj: \
- D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\serialUtils.c \
+ D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\serialUtils.c \
  c:\rppico~1\armcc\102021~1.10\arm-none-eabi\include\stdio.h \
  c:\rppico~1\armcc\102021~1.10\arm-none-eabi\include\_ansi.h \
  c:\rppico~1\armcc\102021~1.10\arm-none-eabi\include\newlib.h \
@@ -38,9 +38,9 @@ CMakeFiles/main.dir/serialUtils.c.obj: \
  c:\rppico~1\armcc\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
  c:\rppico~1\armcc\102021~1.10\arm-none-eabi\include\stdint.h \
  c:\rppico~1\armcc\102021~1.10\arm-none-eabi\include\sys\_intsup.h \
- D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\generated\pico_base/pico/version.h \
+ D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\generated\pico_base/pico/version.h \
  C:\RPPicoSDK\sdk\pico\pico-sdk\src\common\pico_base\include/pico/config.h \
- D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\generated\pico_base/pico/config_autogen.h \
+ D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\generated\pico_base/pico/config_autogen.h \
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/boards/include/boards/pico.h \
  C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  C:\RPPicoSDK\sdk\pico\pico-sdk\src\rp2_common\pico_platform\include/pico/platform.h \
@@ -65,4 +65,4 @@ CMakeFiles/main.dir/serialUtils.c.obj: \
  C:\RPPicoSDK\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/uart.h \
  C:\RPPicoSDK\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/dreq.h \
  C:\RPPicoSDK\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_usb\include/pico/stdio_usb.h \
- D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\serialUtils.h
+ D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\serialUtils.h

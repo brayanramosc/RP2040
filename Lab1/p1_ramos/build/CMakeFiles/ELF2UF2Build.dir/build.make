@@ -52,10 +52,10 @@ RM = C:\RPPicoSDK\cmake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos
+CMAKE_SOURCE_DIR = D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build
+CMAKE_BINARY_DIR = D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build
 
 # Utility rule file for ELF2UF2Build.
 
@@ -75,51 +75,51 @@ CMakeFiles/ELF2UF2Build-complete: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-pa
 CMakeFiles/ELF2UF2Build-complete: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 CMakeFiles/ELF2UF2Build-complete: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
 CMakeFiles/ELF2UF2Build-complete: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'ELF2UF2Build'"
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles/ELF2UF2Build-complete
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'ELF2UF2Build'"
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles/ELF2UF2Build-complete
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'ELF2UF2Build'"
-	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\elf2uf2 && $(MAKE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'ELF2UF2Build'"
+	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\elf2uf2 && $(MAKE)
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure: elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'ELF2UF2Build'"
-	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\elf2uf2 && C:\RPPicoSDK\cmake\bin\cmake.exe "-GMinGW Makefiles" C:/RPPicoSDK/sdk/pico/pico-sdk/tools/elf2uf2
-	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\elf2uf2 && C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'ELF2UF2Build'"
+	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\elf2uf2 && C:\RPPicoSDK\cmake\bin\cmake.exe "-GMinGW Makefiles" C:/RPPicoSDK/sdk/pico/pico-sdk/tools/elf2uf2
+	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\elf2uf2 && C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'ELF2UF2Build'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'ELF2UF2Build'"
 	C:\RPPicoSDK\cmake\bin\cmake.exe -E echo_append
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'ELF2UF2Build'"
-	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\elf2uf2 && C:\RPPicoSDK\cmake\bin\cmake.exe -E echo_append
-	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\elf2uf2 && C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'ELF2UF2Build'"
+	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\elf2uf2 && C:\RPPicoSDK\cmake\bin\cmake.exe -E echo_append
+	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\elf2uf2 && C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'ELF2UF2Build'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'ELF2UF2Build'"
 	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory C:/RPPicoSDK/sdk/pico/pico-sdk/tools/elf2uf2
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/tmp
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/src
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/tmp
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/src
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E make_directory D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'ELF2UF2Build'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'ELF2UF2Build'"
 	C:\RPPicoSDK\cmake\bin\cmake.exe -E echo_append
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'ELF2UF2Build'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'ELF2UF2Build'"
 	C:\RPPicoSDK\cmake\bin\cmake.exe -E echo_append
-	C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
+	C:\RPPicoSDK\cmake\bin\cmake.exe -E touch D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
 
 ELF2UF2Build: CMakeFiles/ELF2UF2Build
 ELF2UF2Build: CMakeFiles/ELF2UF2Build-complete
@@ -142,6 +142,6 @@ CMakeFiles/ELF2UF2Build.dir/clean:
 .PHONY : CMakeFiles/ELF2UF2Build.dir/clean
 
 CMakeFiles/ELF2UF2Build.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\CMakeFiles\ELF2UF2Build.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\CMakeFiles\ELF2UF2Build.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ELF2UF2Build.dir/depend
 

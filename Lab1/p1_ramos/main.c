@@ -21,7 +21,7 @@ int main(){
 
     bool menuFlag = true;
     uint32_t option;
-    uint32_t tempThreshold = MAX_TEMPERATURE_THRESHOLD;
+    float tempThreshold = MAX_TEMPERATURE_THRESHOLD;
 
     // Check for USB connection
     while (!stdio_usb_connected()) {
@@ -73,13 +73,13 @@ int main(){
             {
                 case 1:
                     printf("Valores: \n");
-                    printf("Temperatura: %d °C\t", tempThreshold);
-                    printf("Porcentaje de luz: %d%%\n", tempThreshold);
+                    printf("Temperatura: %f °C\t", tempThreshold);
+                    printf("Porcentaje de luz: %f%%\n", tempThreshold);
                     printf(MENU_MESSAGE);
                     menuFlag = true;
                     break;
                 case 2:
-                    printf("Opcion 2 :3 \n");
+                    printf("Opcion 2... \n");
                     tempThreshold = GetThreshold(MIN_TEMPERATURE_THRESHOLD, MAX_TEMPERATURE_THRESHOLD);
                     if (tempThreshold != PICO_ERROR_TIMEOUT){
                         printf("Actualizacion completa!\n\n");

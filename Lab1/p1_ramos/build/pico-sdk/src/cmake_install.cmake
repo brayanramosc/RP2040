@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/pico-sdk/src/common/cmake_install.cmake")
-  include("D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/pico-sdk/src/rp2_common/cmake_install.cmake")
-  include("D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/pico-sdk/src/rp2040/cmake_install.cmake")
+  include("D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/pico-sdk/src/common/cmake_install.cmake")
+  include("D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/pico-sdk/src/rp2_common/cmake_install.cmake")
+  include("D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/pico-sdk/src/rp2040/cmake_install.cmake")
 
 endif()
 

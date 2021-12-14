@@ -8,17 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
-  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
-  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
-  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
-  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
-  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
-  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
-  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
-  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
-  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
-  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+  "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S" "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -177,10 +177,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj" "gcc" "CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d"
   "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" "gcc" "CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
-  "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/adc.c" "CMakeFiles/main.dir/adc.c.obj" "gcc" "CMakeFiles/main.dir/adc.c.obj.d"
-  "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/main.c" "CMakeFiles/main.dir/main.c.obj" "gcc" "CMakeFiles/main.dir/main.c.obj.d"
-  "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/serialUtils.c" "CMakeFiles/main.dir/serialUtils.c.obj" "gcc" "CMakeFiles/main.dir/serialUtils.c.obj.d"
-  "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/timer.c" "CMakeFiles/main.dir/timer.c.obj" "gcc" "CMakeFiles/main.dir/timer.c.obj.d"
+  "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/adc.c" "CMakeFiles/main.dir/adc.c.obj" "gcc" "CMakeFiles/main.dir/adc.c.obj.d"
+  "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/main.c" "CMakeFiles/main.dir/main.c.obj" "gcc" "CMakeFiles/main.dir/main.c.obj.d"
+  "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/serialUtils.c" "CMakeFiles/main.dir/serialUtils.c.obj" "gcc" "CMakeFiles/main.dir/serialUtils.c.obj.d"
+  "D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/timer.c" "CMakeFiles/main.dir/timer.c.obj" "gcc" "CMakeFiles/main.dir/timer.c.obj.d"
   "C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/main.dir/C_/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   )
 
