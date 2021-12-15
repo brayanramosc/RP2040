@@ -65,7 +65,7 @@ int main(){
             temperature_adc_request = false;
             voltage_mv = (raw_value * ADC_CONVERSION_FACTOR) * 1000;
             tempRead = voltage_mv / 10;     // 1°C per 10mV
-            //printf("voltage: %.2f V \t mV: %.2f \t temp: %.2f\n", raw_value * ADC_CONVERSION_FACTOR, voltage_mv, tempRead);
+            //printf("raw: %.2f V \t mV: %.2f \t temp: %.2f\n", raw_value, voltage_mv, tempRead);
             
             if (tempRead > tempThreshold)
             {
@@ -95,14 +95,15 @@ int main(){
         }
 
         /********************************* Menu *********************************/
-        completeMenu = GetMenuOption(&auxTemp, 
-                     &auxLightPerc, 
-                     tempRead, 
-                     lightPercRead,
-                     MIN_TEMPERATURE_THRESHOLD,
-                     MAX_TEMPERATURE_THRESHOLD,
-                     MIN_LIGHT_PERCENTAGE_THRESHOLD,
-                     MAX_LIGHT_PERCENTAGE_THRESHOLD);
+        completeMenu = GetMenuOption(
+                    &auxTemp, 
+                    &auxLightPerc, 
+                    tempRead, 
+                    lightPercRead,
+                    MIN_TEMPERATURE_THRESHOLD,
+                    MAX_TEMPERATURE_THRESHOLD,
+                    MIN_LIGHT_PERCENTAGE_THRESHOLD,
+                    MAX_LIGHT_PERCENTAGE_THRESHOLD);
 
         if (completeMenu != PICO_ERROR_TIMEOUT)
         {
