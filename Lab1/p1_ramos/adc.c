@@ -43,10 +43,6 @@ void adc_setup()
 // Capturing data
 void adc_capture(uint8_t adc_num)
 {
-    uint8_t level;
-    uint16_t raw_value;
-    float voltage;
-
     adc_fifo_drain();
     adc_select_input(adc_num);
     adc_run(true);
