@@ -101,12 +101,8 @@ int main(){
         {
             if (auxTemp != 0 && auxLightPerc != 0)
             {
-                printf("Tempaux: %d \t Lightaux: %d \n\n", auxTemp, auxLightPerc);
-
                 lightPercThreshold = (float)auxLightPerc;
                 tempThreshold = (float)auxTemp;
-
-                printf("Temp: %.2f \t Light: %.2f \n\n", tempThreshold, lightPercThreshold);
             }
         }
     }
