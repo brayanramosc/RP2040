@@ -25,10 +25,14 @@ int main(){
     adc_setup();
 
     bool menuFlag = true;
-    uint32_t option;
+    uint32_t completeMenu;
+
     float tempThreshold = MAX_TEMPERATURE_THRESHOLD;
+    uint32_t auxTemp = 0;
     float tempRead = tempThreshold;
+
     float lightPercThreshold = MIN_LIGHT_PERCENTAGE_THRESHOLD;
+    uint32_t auxLightPerc = 0;
     float lightPercRead = lightPercThreshold;
 
     // Check for USB connection
@@ -51,7 +55,7 @@ int main(){
         if(light_timer_request)
         {
             light_timer_request = false;
-            printf("Interrupcion luz dada: %ld\n", time_us_32());
+            //printf("Interrupcion luz dada: %ld\n", time_us_32());
             lightPercRead = adc_capture_light_perc();
         }
 
@@ -73,7 +77,7 @@ int main(){
         if(light_adc_request)
         {
             light_adc_request = false;
-            printf("Conversion light dada: %.2f\n", lightPercRead);
+            //printf("Conversion light dada: %.2f\n", lightPercRead);
             if (lightPercRead < lightPercThreshold)
             {
                 gpio_put(LED_PIN, true);
@@ -84,7 +88,30 @@ int main(){
             }
         }
 
-        if (menuFlag)
+        completeMenu = TestFunction(&auxTemp, 
+                     &auxLightPerc, 
+                     tempRead, 
+                     lightPercRead,
+                     MIN_TEMPERATURE_THRESHOLD,
+                     MAX_TEMPERATURE_THRESHOLD,
+                     MIN_LIGHT_PERCENTAGE_THRESHOLD,
+                     MAX_LIGHT_PERCENTAGE_THRESHOLD);
+
+        if (completeMenu != PICO_ERROR_TIMEOUT)
+        {
+            if (auxTemp != 0 && auxLightPerc != 0)
+            {
+                printf("Tempaux: %d \t Lightaux: %d \n\n", auxTemp, auxLightPerc);
+
+                lightPercThreshold = (float)auxLightPerc;
+                tempThreshold = (float)auxTemp;
+
+                printf("Temp: %.2f \t Light: %.2f \n\n", tempThreshold, lightPercThreshold);
+            }
+        }
+        
+
+        /*if (menuFlag)
         {
             option = GetOption();
             if (option != PICO_ERROR_TIMEOUT)
@@ -98,24 +125,32 @@ int main(){
             {
                 case 1:
                     printf("Valores: \n");
-                    printf("Temperatura: %f °C\t", tempThreshold);
-                    printf("Porcentaje de luz: %f%%\n", tempThreshold);
+                    printf("Temperatura: %.2f grados Celsius\t", tempRead);
+                    printf("Porcentaje de luz: %.2f%%\n\n", lightPercRead);
                     printf(MENU_MESSAGE);
                     menuFlag = true;
                     break;
                 case 2:
-                    printf("Opcion 2... \n");
-                    tempThreshold = GetThreshold(MIN_TEMPERATURE_THRESHOLD, MAX_TEMPERATURE_THRESHOLD);
-                    if (tempThreshold != PICO_ERROR_TIMEOUT){
-                        printf("Actualizacion completa!\n\n");
+                    auxLightPerc = GetThreshold(MIN_LIGHT_PERCENTAGE_THRESHOLD, MAX_LIGHT_PERCENTAGE_THRESHOLD);
+
+                    if (auxLightPerc != PICO_ERROR_TIMEOUT){
+                        lightPercThreshold = (float)auxLightPerc;
+                        auxTemp = GetThreshold(MIN_TEMPERATURE_THRESHOLD, MAX_TEMPERATURE_THRESHOLD);
+
+                        if (auxTemp != PICO_ERROR_TIMEOUT){
+                            printf("Actualizacion completa!\n\n");
+                            tempThreshold = auxTemp;
+
+                            menuFlag = true;
+                            printf(MENU_MESSAGE);
+                        }
                     }
-                    menuFlag = true;
                     break;
                 
                 default:
                     break;
             }
-        }
+        }*/
     }
 
     return 0;
