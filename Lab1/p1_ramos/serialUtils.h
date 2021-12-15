@@ -14,6 +14,7 @@ uint32_t TestFunction(uint32_t*,
                       uint8_t,
                       uint8_t);
 
+bool GetValue(uint32_t*, uint8_t, uint8_t);
 uint32_t GetThreshold(uint8_t, uint8_t);
 
 #endif

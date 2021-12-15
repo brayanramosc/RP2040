@@ -88,8 +88,14 @@ uint32_t TestFunction(uint32_t* auxTemp,
                 printf("Opcion correcta.\n");
                 get_temperature: printf("Actualice el umbral para la temperatura.\n");
                 printf("Ingrese un valor entre %d y %d: \n", minTempThreshold, maxTempThreshold);
+
+                if (!GetValue(auxTemp, minTempThreshold, maxTempThreshold))
+                {
+                    goto get_temperature;
+                }
                 
-                while ((character = getchar()) != ENTER) {
+                
+                /*while ((character = getchar()) != ENTER) {
                     if (character >= '0' && character <= '9') {
                         tempAcum = tempAcum*10 + (character & 0x0F);
                     }
@@ -106,12 +112,21 @@ uint32_t TestFunction(uint32_t* auxTemp,
                 }else{
                     printf("Valor de umbral actualizado correctamente a: %d.\n\n", tempAcum);
                     *auxTemp = tempAcum;
-                }
+                }*/
 
                 get_light_perc: printf("Actualice el umbral para el porcentaje de luz.\n");
                 printf("Ingrese un valor entre %d y %d: \n", minlightThreshold, maxlightThreshold);
 
-                while ((character = getchar()) != ENTER) {
+                if (!GetValue(auxLightPerc, minlightThreshold, maxlightThreshold))
+                {
+                    goto get_light_perc;
+                }
+                else
+                {
+                    printf(MENU_MESSAGE);
+                }
+
+                /*while ((character = getchar()) != ENTER) {
                     if (character >= '0' && character <= '9') {
                         lightAcum = lightAcum*10 + (character & 0x0F);
                     }
@@ -129,7 +144,7 @@ uint32_t TestFunction(uint32_t* auxTemp,
                     printf("Valor de umbral actualizado correctamente a: %d.\n\n", lightAcum);
                     *auxLightPerc = lightAcum; 
                     printf(MENU_MESSAGE);
-                }
+                }*/
                 break;
             
             default:
@@ -145,6 +160,38 @@ uint32_t TestFunction(uint32_t* auxTemp,
     }
 
     return (acum);
+}
+
+bool GetValue(uint32_t* aux, uint8_t minThreshold, uint8_t maxThreshold){
+    int character;
+    uint32_t acum = 0;
+    bool charPresence = false;
+
+    while ((character = getchar()) != ENTER) 
+    {
+        if (character >= '0' && character <= '9') 
+        {
+            acum = acum*10 + (character & 0x0F);
+        }
+    }
+
+    if (charPresence || acum < minThreshold)
+    {
+        printf("El valor ingresado es menor al valor minimo aceptado (%d).\n\n", minThreshold);
+        return false;
+    }
+    else if (acum > maxThreshold)
+    {
+        printf("El valor ingresado es mayor al valor maximo aceptado (%d).\n\n", maxThreshold);
+        return false;
+    }
+    else
+    {
+        printf("Valor de umbral actualizado correctamente a: %d.\n\n", acum);
+        *aux = acum;
+    }
+
+    return true;
 }
 
 uint32_t GetThreshold(uint8_t minThreshold, uint8_t maxThreshold) {
