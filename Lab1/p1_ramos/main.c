@@ -50,16 +50,12 @@ int main(){
         if(temperature_timer_request)
         {
             temperature_timer_request = false;
-            //printf("Interrupcion temp dada: %ld\n", time_us_32());
-            //tempRead = adc_capture_temperature();
             adc_capture(ADC_NUM_TEMP);
         }
 
         if(light_timer_request)
         {
             light_timer_request = false;
-            //printf("Interrupcion luz dada: %ld\n", time_us_32());
-            //lightPercRead = adc_capture_light_perc();
             adc_capture(ADC_NUM_LIGHT);
         }
 
@@ -69,7 +65,6 @@ int main(){
             temperature_adc_request = false;
             voltage_mv = (raw_value * ADC_CONVERSION_FACTOR) * 1000;
             tempRead = voltage_mv / 10;     // 1°C per 10mV
-
             //printf("voltage: %.2f V \t mV: %.2f \t temp: %.2f\n", raw_value * ADC_CONVERSION_FACTOR, voltage_mv, tempRead);
             
             if (tempRead > tempThreshold)
@@ -87,7 +82,6 @@ int main(){
         {
             light_adc_request = false;
             lightPercRead = (raw_value * 100) / ADC_RANGE;
-            
             //printf("voltage: %.2f V \t \t light: %.2f\n", raw_value * ADC_CONVERSION_FACTOR, lightPercRead);
 
             if (lightPercRead < lightPercThreshold)
