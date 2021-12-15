@@ -88,7 +88,7 @@ int main(){
             }
         }
 
-        completeMenu = TestFunction(&auxTemp, 
+        completeMenu = GetMenuOption(&auxTemp, 
                      &auxLightPerc, 
                      tempRead, 
                      lightPercRead,
@@ -109,48 +109,6 @@ int main(){
                 printf("Temp: %.2f \t Light: %.2f \n\n", tempThreshold, lightPercThreshold);
             }
         }
-        
-
-        /*if (menuFlag)
-        {
-            option = GetOption();
-            if (option != PICO_ERROR_TIMEOUT)
-            {
-                menuFlag = false;
-            }
-        }
-        else
-        {
-            switch (option)
-            {
-                case 1:
-                    printf("Valores: \n");
-                    printf("Temperatura: %.2f grados Celsius\t", tempRead);
-                    printf("Porcentaje de luz: %.2f%%\n\n", lightPercRead);
-                    printf(MENU_MESSAGE);
-                    menuFlag = true;
-                    break;
-                case 2:
-                    auxLightPerc = GetThreshold(MIN_LIGHT_PERCENTAGE_THRESHOLD, MAX_LIGHT_PERCENTAGE_THRESHOLD);
-
-                    if (auxLightPerc != PICO_ERROR_TIMEOUT){
-                        lightPercThreshold = (float)auxLightPerc;
-                        auxTemp = GetThreshold(MIN_TEMPERATURE_THRESHOLD, MAX_TEMPERATURE_THRESHOLD);
-
-                        if (auxTemp != PICO_ERROR_TIMEOUT){
-                            printf("Actualizacion completa!\n\n");
-                            tempThreshold = auxTemp;
-
-                            menuFlag = true;
-                            printf(MENU_MESSAGE);
-                        }
-                    }
-                    break;
-                
-                default:
-                    break;
-            }
-        }*/
     }
 
     return 0;
