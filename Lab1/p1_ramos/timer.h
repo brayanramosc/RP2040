@@ -1,8 +1,8 @@
 #ifndef _TIMER_H
 #define _TIMER_H
 
-#define TEMP_TIMER_PERIOD 500       // 500 ms para int.
-#define LIGHT_TIMER_PERIOD 1000     // 1500 ms para int.
+#define TEMP_TIMER_PERIOD 500      
+#define LIGHT_TIMER_PERIOD 1000     
 
 extern struct repeating_timer temp_timer;
 extern struct repeating_timer light_timer;

@@ -70,7 +70,7 @@ int main(){
             voltage_mv = (raw_value * ADC_CONVERSION_FACTOR) * 1000;
             tempRead = voltage_mv / 10;     // 1°C per 10mV
 
-            printf("voltage: %.2f V \t mV: %.2f \t temp: %.2f\n", raw_value * ADC_CONVERSION_FACTOR, voltage_mv, tempRead);
+            //printf("voltage: %.2f V \t mV: %.2f \t temp: %.2f\n", raw_value * ADC_CONVERSION_FACTOR, voltage_mv, tempRead);
             
             if (tempRead > tempThreshold)
             {
@@ -88,7 +88,7 @@ int main(){
             light_adc_request = false;
             lightPercRead = (raw_value * 100) / ADC_RANGE;
             
-            printf("voltage: %.2f V \t \t light: %.2f\n", raw_value * ADC_CONVERSION_FACTOR, lightPercRead);
+            //printf("voltage: %.2f V \t \t light: %.2f\n", raw_value * ADC_CONVERSION_FACTOR, lightPercRead);
 
             if (lightPercRead < lightPercThreshold)
             {
