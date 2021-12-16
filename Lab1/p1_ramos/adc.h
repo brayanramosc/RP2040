@@ -15,7 +15,5 @@ extern volatile uint16_t raw_value;
 
 void adc_setup(void);
 void adc_capture(uint8_t);
-float adc_capture_temperature(void);
-float adc_capture_light_perc(void);
 
 #endif

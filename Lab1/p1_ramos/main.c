@@ -51,21 +51,21 @@ int main(){
         {
             temperature_timer_request = false;
             adc_capture(ADC_NUM_TEMP);
-        }
+        } 
 
         if(light_timer_request)
         {
             light_timer_request = false;
-            adc_capture(ADC_NUM_LIGHT);
+            //adc_capture(ADC_NUM_LIGHT);
         }
 
         /******************************* ADC Request ******************************/
         if(temperature_adc_request)
         {
             temperature_adc_request = false;
-            voltage_mv = (raw_value * ADC_CONVERSION_FACTOR) * 1000;
+            voltage_mv = ((float)raw_value * ADC_CONVERSION_FACTOR) * 1000;
             tempRead = voltage_mv / 10;     // 1°C per 10mV
-            //printf("raw: %.2f V \t mV: %.2f \t temp: %.2f\n", raw_value, voltage_mv, tempRead);
+            printf("Raw: %d \t mV: %.2f \t temp: %.2f\n", raw_value, voltage_mv, tempRead);
             
             if (tempRead > tempThreshold)
             {
