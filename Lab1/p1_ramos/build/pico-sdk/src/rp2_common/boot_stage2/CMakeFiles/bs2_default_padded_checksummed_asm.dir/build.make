@@ -52,10 +52,10 @@ RM = C:\RPPicoSDK\cmake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos
+CMAKE_SOURCE_DIR = D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build
+CMAKE_BINARY_DIR = D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build
 
 # Utility rule file for bs2_default_padded_checksummed_asm.
 
@@ -68,12 +68,12 @@ include pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checks
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 
 pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S: pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
-	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\pico-sdk\src\rp2_common\boot_stage2 && C:\Python39\python.exe C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/boot_stage2/pad_checksum -s 0xffffffff D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
+	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\pico-sdk\src\rp2_common\boot_stage2 && C:\Python39\python.exe C:/RPPicoSDK/sdk/pico/pico-sdk/src/rp2_common/boot_stage2/pad_checksum -s 0xffffffff D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
-	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\pico-sdk\src\rp2_common\boot_stage2 && "C:\RPPicoSDK\armcc\10 2021.10\bin\arm-none-eabi-objcopy.exe" -Obinary D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
+	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\pico-sdk\src\rp2_common\boot_stage2 && "C:\RPPicoSDK\armcc\10 2021.10\bin\arm-none-eabi-objcopy.exe" -Obinary D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 bs2_default_padded_checksummed_asm: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm
 bs2_default_padded_checksummed_asm: pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
@@ -86,10 +86,10 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_as
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/clean:
-	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\pico-sdk\src\rp2_common\boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles\bs2_default_padded_checksummed_asm.dir\cmake_clean.cmake
+	cd /d D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\pico-sdk\src\rp2_common\boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles\bs2_default_padded_checksummed_asm.dir\cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/clean
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos C:\RPPicoSDK\sdk\pico\pico-sdk\src\rp2_common\boot_stage2 D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\pico-sdk\src\rp2_common\boot_stage2 D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\Lab1\p1_ramos\build\pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos C:\RPPicoSDK\sdk\pico\pico-sdk\src\rp2_common\boot_stage2 D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\pico-sdk\src\rp2_common\boot_stage2 D:\UdeA\Electronic\Digitales\SEA\Laboratorio\Labs\RP2040\Lab1\p1_ramos\build\pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend
 

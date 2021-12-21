@@ -25,8 +25,5 @@ bool timer_init(int32_t temp_period_ms, int32_t light_period_ms){
     {
         return true;
     }
-    else
-    {
-        return false;
-    }
+    return false;
 }

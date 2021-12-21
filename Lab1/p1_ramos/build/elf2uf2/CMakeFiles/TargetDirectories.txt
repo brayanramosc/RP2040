@@ -1,5 +1,5 @@
-D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/CMakeFiles/elf2uf2.dir
-D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/CMakeFiles/edit_cache.dir
-D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/CMakeFiles/rebuild_cache.dir
-D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
-D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/Lab1/p1_ramos/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir
+D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/CMakeFiles/elf2uf2.dir
+D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/CMakeFiles/edit_cache.dir
+D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/CMakeFiles/rebuild_cache.dir
+D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
+D:/UdeA/Electronic/Digitales/SEA/Laboratorio/Labs/RP2040/Lab1/p1_ramos/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir
