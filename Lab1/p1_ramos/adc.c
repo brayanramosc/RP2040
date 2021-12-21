@@ -35,10 +35,13 @@ void adc_setup()
     adc_fifo_setup(
         true,
         false,
-        1,
+        2,
         false,
         false);
-
+    
+    irq_set_exclusive_handler(ADC_IRQ_FIFO, adc_handler);
+    adc_irq_set_enabled(true);
+    irq_set_enabled(ADC_IRQ_FIFO, true);
 }
 
 // Capturing data
@@ -47,8 +50,4 @@ void adc_capture(uint8_t adc_num)
     adc_fifo_drain();
     adc_select_input(adc_num);
     adc_run(true);
-    
-    irq_set_exclusive_handler(ADC_IRQ_FIFO, adc_handler);
-    adc_irq_set_enabled(true);
-    irq_set_enabled(ADC_IRQ_FIFO, true);
 }
