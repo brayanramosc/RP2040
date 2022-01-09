@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
-
 #include "rtc.h"
 
+#define RUN_MODE DEBUG
 #define LED_PIN 2
 
 int main(){
@@ -15,10 +15,12 @@ int main(){
     uint32_t completeMenu;
 
     // Check for USB connection
-    while (!stdio_usb_connected()) {
-        printf(".");
-        sleep_ms(500);
-    }
+    #if RUN_MODE == DEBUG
+        while (!stdio_usb_connected()) {
+            printf(".");
+            sleep_ms(500);
+        }
+    #endif
 
     // Infinite loop
     while (true){
