@@ -24,18 +24,22 @@ int main(){
 
     // Infinite loop
     while (true){
-        /****************************** Timer Request ******************************/
-        if(temperature_timer_request)
-        {
-            temperature_timer_request = false;
-            adc_capture(ADC_NUM_TEMP);
-        } 
+        #if RUN_MODE == DEBUG
+            print_current_time();
+        #else
+            /****************************** Timer Request ******************************/
+            if(temperature_timer_request)
+            {
+                temperature_timer_request = false;
+                adc_capture(ADC_NUM_TEMP);
+            } 
 
-        if(light_timer_request)
-        {
-            light_timer_request = false;
-            adc_capture(ADC_NUM_LIGHT);
-        }
+            if(light_timer_request)
+            {
+                light_timer_request = false;
+                adc_capture(ADC_NUM_LIGHT);
+            }
+        #endif
     }
 
     return 0;
