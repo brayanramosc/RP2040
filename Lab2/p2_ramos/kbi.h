@@ -11,4 +11,12 @@
 #define COL3 7
 #define COL4 8
 
+#define DEBOUNCE_MS 50
+
+extern volatile bool key_pressed;
+
+void kbi_init();
+void set_rows_as_input();
+void set_rows_as_output();
+
 #endif
