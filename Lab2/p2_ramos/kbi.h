@@ -18,6 +18,6 @@ extern volatile bool key_pressed;
 void kbi_init();
 void set_rows_as_input();
 void set_rows_as_output();
-uint8_t get_key();
+char get_key();
 
 #endif

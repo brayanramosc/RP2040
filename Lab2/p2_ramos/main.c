@@ -13,7 +13,7 @@ int main(){
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
-    bool menuFlag = true;
+    char key;
     uint32_t completeMenu;
 
     // Check for USB connection
@@ -28,13 +28,12 @@ int main(){
     while (true){
         #if RUN_MODE == DEBUG
             print_current_time();
-            if (key_pressed)
-            {
-                alarm_init(DEBOUNCE_MS);
-            }
+            if (key_pressed) alarm_init(DEBOUNCE_MS)
             if (alarm_fired)
             {
-                get_key();
+                key = get_key();
+                #if RUN_MODE == DEBUG
+                    printf("Letra: %c", key);
             }
             
         #else
