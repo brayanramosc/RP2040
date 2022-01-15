@@ -5,6 +5,11 @@
 #include "kbi.h"
 
 volatile bool key_pressed = false;
+char keys[4][4] =   {   '1', '2', '3', 'A', 
+                        '4', '5', '6', 'B', 
+                        '7', '8', '9', 'C', 
+                        '*', '0', '#', 'D'
+                    };
 
 void kbi_irq_callback(uint gpio, uint32_t events) {
     key_pressed = true;
@@ -68,3 +73,5 @@ void kbi_init(){
     gpio_set_irq_enabled_with_callback(COL3, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
     gpio_set_irq_enabled_with_callback(COL4, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
 }
+
+

@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "rtc.h"
+#include "kbi.h"
+#include "timer.h"
 
 #define RUN_MODE DEBUG
-#define LED_PIN 2
+#define LED_PIN 15
 
 int main(){
     // Initialization
@@ -26,6 +28,15 @@ int main(){
     while (true){
         #if RUN_MODE == DEBUG
             print_current_time();
+            if (key_pressed)
+            {
+                alarm_init(DEBOUNCE_MS);
+            }
+            if (alarm_fired)
+            {
+                get_key();
+            }
+            
         #else
             /****************************** Timer Request ******************************/
             if(temperature_timer_request)
