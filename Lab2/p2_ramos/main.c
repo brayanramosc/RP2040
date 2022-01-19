@@ -17,8 +17,10 @@ int main(){
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
-    timer_init(MAIN_PERIOD);
-
+    while (!timer_init(MAIN_PERIOD)){
+        tight_loop_contents();
+    }
+    
     char key;
     uint8_t counter = 0;
     uint32_t completeMenu;
