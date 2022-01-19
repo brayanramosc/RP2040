@@ -5,7 +5,7 @@
 
 //extern repeating_timer_t t;
 //extern volatile bool timer_request;
-extern volatile bool alarm_fired;
+extern volatile bool timer_fired;
 
 //bool timer_init(int32_t);
 void alarm_init(uint32_t);

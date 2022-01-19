@@ -10,6 +10,8 @@
 int main(){
     // Initialization
     stdio_init_all();
+    kbi_init();
+    rtc_setup();
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
@@ -27,13 +29,20 @@ int main(){
     // Infinite loop
     while (true){
         #if RUN_MODE == DEBUG
-            print_current_time();
-            if (key_pressed) alarm_init(DEBOUNCE_MS)
-            if (alarm_fired)
+            //print_current_time();
+            if (key_pressed) {
+                alarm_init(DEBOUNCE_MS);
+                key_pressed = false;
+                //printf("Evento de tecla\n");
+            }
+            if (timer_fired)
             {
                 key = get_key();
-                #if RUN_MODE == DEBUG
-                    printf("Letra: %c", key);
+                //printf("Antirrebote\n");
+                printf("Letra: %c\n", key);
+                timer_fired = false;
+                key_pressed = false;
+                print_current_time();
             }
             
         #else

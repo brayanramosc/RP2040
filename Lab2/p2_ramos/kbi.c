@@ -79,17 +79,19 @@ char get_key(){
     uint8_t row;
     char key;
 
-    if (!gpio_get(COL1)) col = 0
-    else if (!gpio_get(COL2)) col = 1
-    else if (!gpio_get(COL3)) col = 2
-    else if (!gpio_get(COL4)) col = 3
+    if (!gpio_get(COL1)) col = 0;
+    else if (!gpio_get(COL2)) col = 1;
+    else if (!gpio_get(COL3)) col = 2;
+    else if (!gpio_get(COL4)) col = 3;
     
     set_rows_as_input();
 
-    if (!gpio_get(ROW1)) row = 0
-    else if (!gpio_get(ROW2)) row = 1
-    else if (!gpio_get(ROW3)) row = 2
-    else if (!gpio_get(ROW4)) row = 3
+    if (!gpio_get(ROW1)) row = 0;
+    else if (!gpio_get(ROW2)) row = 1;
+    else if (!gpio_get(ROW3)) row = 2;
+    else if (!gpio_get(ROW4)) row = 3;
+
+    printf("%d, %d\n", col, row);
 
     key = keys[row][col];
     set_rows_as_output();

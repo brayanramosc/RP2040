@@ -9,10 +9,10 @@ volatile bool alarm_fired = false;
 char datetime_buf[256];
 char *datetime_str = &datetime_buf[0];
 
-datatime_t t = {
+datetime_t t = {
     .year   = 2022,
     .month  = 01,
-    .day    = 07,
+    .day    = 17,
     .dotw   = 5,
     .hour   = 22,
     .min    = 40,

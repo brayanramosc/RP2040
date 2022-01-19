@@ -16,6 +16,8 @@ pico_sdk_init()
 add_executable(${PROJECT_NAME}
         main.c
         rtc.c
+        timer.c
+        kbi.c
 )
 
 # Habilitar comunicación por USB
@@ -29,5 +31,6 @@ pico_add_extra_outputs(${PROJECT_NAME})
 target_link_libraries(
         ${PROJECT_NAME}
         pico_stdlib
-        hardware_adc
+        hardware_rtc
+        hardware_gpio
 )
