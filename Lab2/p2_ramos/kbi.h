@@ -11,8 +11,6 @@
 #define COL3 6
 #define COL4 7
 
-#define DEBOUNCE_MS 50
-
 extern volatile bool key_pressed;
 
 void kbi_init();
