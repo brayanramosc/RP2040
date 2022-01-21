@@ -83,6 +83,7 @@ char get_key(){
     else if (!gpio_get(COL2)) col = 1;
     else if (!gpio_get(COL3)) col = 2;
     else if (!gpio_get(COL4)) col = 3;
+    else col = 4;
     
     set_rows_as_input();
 
@@ -90,8 +91,13 @@ char get_key(){
     else if (!gpio_get(ROW2)) row = 1;
     else if (!gpio_get(ROW3)) row = 2;
     else if (!gpio_get(ROW4)) row = 3;
+    else row = 4;
 
-    printf("%d, %d\n", col, row);
+    if (row == 4 || col == 4)
+    {
+        set_rows_as_output();
+        return 'N';
+    }
 
     key = keys[row][col];
     set_rows_as_output();

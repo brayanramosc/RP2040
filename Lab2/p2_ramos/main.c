@@ -45,8 +45,12 @@ int main(){
                     key_pressed = false;
                     counter = 0;
                     #if RUN_MODE == DEBUG
-                        printf("Tecla: %c\n", key);
-                        print_current_time();
+                        if (key != 'N')
+                        {
+                            printf("Tecla: %c\n", key);
+                            print_current_time();
+                        }
+                        
                     #endif
                 }
             }
