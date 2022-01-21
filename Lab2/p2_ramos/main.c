@@ -1,17 +1,28 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "rtc.h"
+#include "kbi.h"
+#include "timer.h"
 
 #define RUN_MODE DEBUG
-#define LED_PIN 2
+#define MAIN_PERIOD 1 
+#define DEBOUNCE_MS 50 
+#define LED_PIN 15
 
 int main(){
     // Initialization
     stdio_init_all();
+    kbi_init();
+    rtc_setup();
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
-    bool menuFlag = true;
+    while (!timer_init(MAIN_PERIOD)){
+        tight_loop_contents();
+    }
+    
+    char key;
+    uint8_t counter = 0;
     uint32_t completeMenu;
 
     // Check for USB connection
@@ -24,22 +35,26 @@ int main(){
 
     // Infinite loop
     while (true){
-        #if RUN_MODE == DEBUG
-            print_current_time();
-        #else
-            /****************************** Timer Request ******************************/
-            if(temperature_timer_request)
-            {
-                temperature_timer_request = false;
-                adc_capture(ADC_NUM_TEMP);
-            } 
-
-            if(light_timer_request)
-            {
-                light_timer_request = false;
-                adc_capture(ADC_NUM_LIGHT);
+        if (timer_request)
+        {
+            timer_request = false;
+            if (key_pressed) {
+                if (++counter == DEBOUNCE_MS)
+                {
+                    key = get_key();
+                    key_pressed = false;
+                    counter = 0;
+                    #if RUN_MODE == DEBUG
+                        if (key != 'N')
+                        {
+                            printf("Tecla: %c\n", key);
+                            print_current_time();
+                        }
+                        
+                    #endif
+                }
             }
-        #endif
+        }
     }
 
     return 0;
