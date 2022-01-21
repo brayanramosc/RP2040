@@ -12,10 +12,10 @@
 int main(){
     // Initialization
     stdio_init_all();
-    kbi_init();
-    rtc_setup();
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
+    kbi_init();
+    rtc_setup();
 
     while (!timer_init(MAIN_PERIOD)){
         tight_loop_contents();
