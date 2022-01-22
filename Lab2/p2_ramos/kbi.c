@@ -3,8 +3,8 @@
 #include "hardware/gpio.h"
 
 #include "kbi.h"
+#include "events.h"
 
-volatile bool key_pressed = false;
 char keys[4][4] =   {   '1', '2', '3', 'A', 
                         '4', '5', '6', 'B', 
                         '7', '8', '9', 'C', 
@@ -12,7 +12,7 @@ char keys[4][4] =   {   '1', '2', '3', 'A',
                     };
 
 void kbi_irq_callback(uint gpio, uint32_t events) {
-    key_pressed = true;
+    EV_KBI = 1;
 }
 
 void set_rows_as_output(){

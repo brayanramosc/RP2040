@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
+#include "events.h"
 #include "rtc.h"
 #include "kbi.h"
 #include "timer.h"
 
-#define RUN_MODE DEBUG
-#define MAIN_PERIOD 1 
-#define DEBOUNCE_MS 50 
-#define LED_PIN 15
+#define MAIN_PERIOD 5 
+//#define DEBOUNCE_MS 10
+//#define LED_PIN 15
 
 int main(){
     // Initialization
@@ -17,25 +17,17 @@ int main(){
     kbi_init();
     rtc_setup();
 
-    while (!timer_init(MAIN_PERIOD)){
-        tight_loop_contents();
-    }
-    
-    char key;
-    uint8_t counter = 0;
-    uint32_t completeMenu;
+    while (!timer_init(MAIN_PERIOD));
 
     // Check for USB connection
     #if RUN_MODE == DEBUG
-        while (!stdio_usb_connected()) {
-            printf(".");
-            sleep_ms(500);
-        }
+        while (!stdio_usb_connected());
     #endif
 
     // Infinite loop
     while (true){
-        if (timer_request)
+        events_controller();
+        /*if (timer_request)
         {
             timer_request = false;
             if (key_pressed) {
@@ -54,7 +46,7 @@ int main(){
                     #endif
                 }
             }
-        }
+        }*/
     }
 
     return 0;

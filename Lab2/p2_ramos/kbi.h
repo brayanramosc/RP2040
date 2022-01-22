@@ -11,8 +11,6 @@
 #define COL3 1
 #define COL4 0
 
-extern volatile bool key_pressed;
-
 void kbi_init();
 void set_rows_as_input();
 void set_rows_as_output();

@@ -15,6 +15,7 @@ pico_sdk_init()
 # Indicarle a CMake los archivos de nuestro programa
 add_executable(${PROJECT_NAME}
         main.c
+        events.c
         rtc.c
         timer.c
         kbi.c
