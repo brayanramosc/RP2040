@@ -48,7 +48,7 @@ void set_rows_as_input(){
     gpio_set_dir(COL3, GPIO_OUT);
     gpio_set_dir(COL4, GPIO_OUT);
 
-    // Pull ups
+    // Enable pull ups
     gpio_pull_up(ROW1);
     gpio_pull_up(ROW2);
     gpio_pull_up(ROW3);
@@ -67,7 +67,7 @@ void kbi_init(){
     gpio_init(COL4);
     set_rows_as_output();
 
-    // IRQ enable
+    // Configure GPIO Interrupts
     gpio_set_irq_enabled_with_callback(COL1, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
     gpio_set_irq_enabled_with_callback(COL2, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
     gpio_set_irq_enabled_with_callback(COL3, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
@@ -93,8 +93,7 @@ char get_key(){
     else if (!gpio_get(ROW4)) row = 3;
     else row = 4;
 
-    if (row == 4 || col == 4)
-    {
+    if (row == 4 || col == 4) {
         set_rows_as_output();
         return 'N';
     }

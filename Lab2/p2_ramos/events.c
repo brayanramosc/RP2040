@@ -7,9 +7,9 @@
 #include "timer.h"
 
 volatile _events_str _events;
-volatile uint8_t 	debounce_counter = 0;
-//volatile bool 		isCounting 	= false;
-char key;
+uint8_t 	debounce_counter = 0;
+bool 		isCounting 	= false;
+char 		key;
 
 // Events controller
 void events_controller(void) {
@@ -20,35 +20,35 @@ void events_controller(void) {
 
 		if (EV_TIMER) {
 			EV_TIMER = 0;
+			//printf("Counter: %d \n", debounce_counter);
 
-			//if (isCounting && ++debounce_counter == DEBOUNCE_MS) {
-				//isCounting = false;
-				/*key = get_key();
-				printf("Tecla: %c\n", key);*/
+			if (isCounting && ++debounce_counter == DEBOUNCE_MS) {
+				isCounting = false;
+				key = get_key();
+				printf("Tecla: %c\n", key);
 
-				if (EV_KBI) {
+				/*if (EV_KBI) {
 					if (++debounce_counter == DEBOUNCE_MS) {
 						key = get_key();
 						EV_KBI = 0;
 						debounce_counter = 0;
 
-						if (key != 'N'){
+						if (key != 'N') {
 							#if RUN_MODE == DEBUG
 								printf("Tecla: %c\n", key);
 								print_current_time();
 							#endif
 						}
 					}
-				}
-			//}
+				}*/
+			}
 		}
 
-		/*if (EV_KBI) {
+		if (EV_KBI) {
 			EV_KBI = 0;
-			printf("KBI! \n");
 
-			debounce_counter = DEBOUNCE_MS;
+			debounce_counter = 0;
 			isCounting = true;
-		}*/
+		}
 	}
 }
