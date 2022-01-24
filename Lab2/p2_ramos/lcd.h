@@ -41,8 +41,8 @@
 #define LCD_CD_SHIFT_DISP               0x08
 #define LCD_CD_SHIFT_CURSOR             0x00
 // Shift direction
-#define LCD_CD_SHIFT_RIGHT              0x04
-#define LCD_CD_SHIFT_LEFT               0x00
+#define LCD_CD_SHIFT_TO_RIGHT           0x04
+#define LCD_CD_SHIFT_TO_LEFT            0x00
 
 // Set function
 // N-bits interface
