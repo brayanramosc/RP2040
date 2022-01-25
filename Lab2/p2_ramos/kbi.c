@@ -33,9 +33,21 @@ void set_rows_as_output(){
     gpio_pull_up(COL2);
     gpio_pull_up(COL3);
     gpio_pull_up(COL4);
+
+    // Configure GPIO Interrupts
+    gpio_set_irq_enabled_with_callback(COL1, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
+    gpio_set_irq_enabled(COL2, GPIO_IRQ_EDGE_FALL, true);
+    gpio_set_irq_enabled(COL3, GPIO_IRQ_EDGE_FALL, true);
+    gpio_set_irq_enabled(COL4, GPIO_IRQ_EDGE_FALL, true);
 }
 
 void set_rows_as_input(){
+    // Configure GPIO Interrupts
+    gpio_set_irq_enabled(COL1, GPIO_IRQ_EDGE_FALL, false);
+    gpio_set_irq_enabled(COL2, GPIO_IRQ_EDGE_FALL, false);
+    gpio_set_irq_enabled(COL3, GPIO_IRQ_EDGE_FALL, false);
+    gpio_set_irq_enabled(COL4, GPIO_IRQ_EDGE_FALL, false);
+
     // Rows init
     gpio_set_dir(ROW1, GPIO_IN);
     gpio_set_dir(ROW2, GPIO_IN);
@@ -66,12 +78,6 @@ void kbi_init(){
     gpio_init(COL3);
     gpio_init(COL4);
     set_rows_as_output();
-
-    // Configure GPIO Interrupts
-    gpio_set_irq_enabled_with_callback(COL1, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
-    gpio_set_irq_enabled_with_callback(COL2, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
-    gpio_set_irq_enabled_with_callback(COL3, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
-    gpio_set_irq_enabled_with_callback(COL4, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
 }
 
 char get_key(){

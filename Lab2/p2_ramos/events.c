@@ -25,7 +25,13 @@ void events_controller(void) {
 			if (isCounting && ++debounce_counter == DEBOUNCE_MS) {
 				isCounting = false;
 				key = get_key();
-				printf("Tecla: %c\n", key);
+
+				if (key != 'N') {
+					#if RUN_MODE == DEBUG
+						printf("Tecla: %c\n", key);
+						print_current_time();
+					#endif
+				}
 
 				/*if (EV_KBI) {
 					if (++debounce_counter == DEBOUNCE_MS) {
