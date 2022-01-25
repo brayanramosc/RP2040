@@ -14,16 +14,16 @@
 #define D7  19
 
 #define LCD_CLEAR                       0x01
-#define LCD_CURSOR_AT_HOME              0x02
-#define LCD_ENTRY_MOD                   0x04
+#define LCD_HOME                        0x02
+#define LCD_ENTRY_MODE                  0x04
 #define LCD_ONOFF_CONTROL               0x08
-#define LCD_CD_SHIFT                    0x10
+#define LCD_MOVE                        0x10
 #define LCD_SET_FUNCTION                0x20
 #define LCD_SET_DDRAM_ADDR              0x80   
 
 // Entry mode
-#define LCD_ENTRY_MOD_CURSOR_INC        0x02
-#define LCD_ENTRY_MOD_CURSOR_DEC        0x00
+#define LCD_ENTRY_MODE_CURSOR_INC       0x02
+#define LCD_ENTRY_MODE_CURSOR_DEC       0x00
 
 // Display/cursor on/off
 // Display on/off
@@ -38,11 +38,11 @@
 
 // Shift
 // Display/cursor shift
-#define LCD_CD_SHIFT_DISP               0x08
-#define LCD_CD_SHIFT_CURSOR             0x00
+#define LCD_MOVE_DISP                   0x08
+#define LCD_MOVE_CURSOR                 0x00
 // Shift direction
-#define LCD_CD_SHIFT_TO_RIGHT           0x04
-#define LCD_CD_SHIFT_TO_LEFT            0x00
+#define LCD_MOVE_TO_RIGHT               0x04
+#define LCD_MOVE_TO_LEFT                0x00
 
 // Set function
 // N-bits interface
@@ -54,6 +54,13 @@
 // Dots
 #define LCD_SET_FUNCTION_5x10           0x04
 #define LCD_SET_FUNCTION_5x8            0x00
+
+#define LCD_RS_CMD                      0
+#define LCD_RS_DATA                     1
+#define LCD_RW_WRITE                    0
+#define LCD_RW_READ                     1
+#define LCD_DISABLE                     0
+#define LCD_ENABLE                      1
 
 void ports_init(void);
 void lcd_init(void);
