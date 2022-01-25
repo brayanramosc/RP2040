@@ -17,6 +17,7 @@ int main(){
     kbi_init();
     rtc_setup();
 
+    // Check for timer
     while (!timer_init(MAIN_PERIOD));
 
     // Check for USB connection
@@ -27,26 +28,6 @@ int main(){
     // Infinite loop
     while (true){
         events_controller();
-        /*if (timer_request)
-        {
-            timer_request = false;
-            if (key_pressed) {
-                if (++counter == DEBOUNCE_MS)
-                {
-                    key = get_key();
-                    key_pressed = false;
-                    counter = 0;
-                    #if RUN_MODE == DEBUG
-                        if (key != 'N')
-                        {
-                            printf("Tecla: %c\n", key);
-                            print_current_time();
-                        }
-                        
-                    #endif
-                }
-            }
-        }*/
     }
 
     return 0;

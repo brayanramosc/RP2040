@@ -20,7 +20,6 @@ void events_controller(void) {
 
 		if (EV_TIMER) {
 			EV_TIMER = 0;
-			//printf("Counter: %d \n", debounce_counter);
 
 			if (isCounting && ++debounce_counter == DEBOUNCE_MS) {
 				isCounting = false;
@@ -32,21 +31,6 @@ void events_controller(void) {
 						print_current_time();
 					#endif
 				}
-
-				/*if (EV_KBI) {
-					if (++debounce_counter == DEBOUNCE_MS) {
-						key = get_key();
-						EV_KBI = 0;
-						debounce_counter = 0;
-
-						if (key != 'N') {
-							#if RUN_MODE == DEBUG
-								printf("Tecla: %c\n", key);
-								print_current_time();
-							#endif
-						}
-					}
-				}*/
 			}
 		}
 
