@@ -7,7 +7,8 @@
 extern volatile bool alarm_fired;
 
 //bool timer_init(int32_t, int32_t);
-void rtc_setup();
-void print_current_time();
+void rtc_setup(void);
+void print_date_and_time(void);
+void print_current_time(void);
 
 #endif
