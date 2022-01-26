@@ -22,6 +22,7 @@ extern volatile _events_str _events;
 #define EV_KBI          _events.flags.flag1 
 
 #define RUN_MODE DEBUG
+#define CONGIF_MESSAGE " A para config. "
 #define DEBOUNCE_MS 10
 #define LED_PIN 15
 

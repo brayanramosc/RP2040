@@ -4,6 +4,7 @@
 #include "rtc.h"
 #include "kbi.h"
 #include "timer.h"
+#include "lcd.h"
 
 #define MAIN_PERIOD 5 
 //#define DEBOUNCE_MS 10
@@ -16,6 +17,7 @@ int main(){
     gpio_set_dir(LED_PIN, GPIO_OUT);
     kbi_init();
     rtc_setup();
+    lcd_init();
 
     // Check for timer
     while (!timer_init(MAIN_PERIOD));
@@ -24,6 +26,7 @@ int main(){
     #if RUN_MODE == DEBUG
         while (!stdio_usb_connected());
     #endif
+    printf("Looooooop\n");
 
     // Infinite loop
     while (true){

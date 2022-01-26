@@ -3,9 +3,9 @@
 #include "pico/stdlib.h"
 
 #include "lcd.h"
-#include "events.h"
 
 void ports_init(void) {
+    printf("Puertos...\n");
     // Initialize ports
     gpio_init(RS);
     gpio_init(RW);
@@ -25,35 +25,128 @@ void ports_init(void) {
     gpio_set_dir(D7, GPIO_OUT);
 }
 
-void lcd_init(void) {
-    ports_init();
-}
-
-/*void lcd_command(uint8_t cmd) {
-    
-    gpio_put(RS, false);
-    gpio_put(RW, false);
-    gpio_put(E, true);
-    gpio_put(E, false);
-}*/
-
-void lcd_char(uint8_t c) {
-    gpio_put(RS, LCD_RS_DATA);
-    gpio_put(RW, LCD_RW_WRITE);
-    gpio_put(E, LCD_ENABLE);
-    gpio_put(E, LCD_DISABLE);
-}
-
 // Check if LCD is ready to receive information
-bool lcd_busy() {
+bool lcd_busy(void) {
     gpio_put(RS, LCD_RS_CMD);
     gpio_put(RW, LCD_RW_READ);
+    gpio_set_dir(D7, GPIO_IN);
+    bool busy = gpio_get(D7);
+    gpio_set_dir(D7, GPIO_OUT);
 
-    return gpio_get(D7);
+    return busy;
 }
 
-void clear_screen() {
+// Pulse enable required to send data/command
+void lcd_enable_pulse(void) {
+    gpio_put(E, LCD_ENABLE);
+    sleep_us(1);
+    gpio_put(E, LCD_DISABLE);
+}
+
+// Send data/command in 4-bit mode
+void lcd_send_4bit(uint8_t byte, bool type) {
+    // Send MSB to LCD
+    gpio_put(D4, (byte & 0x10) >> 4);
+    gpio_put(D5, (byte & 0x20) >> 5);
+    gpio_put(D6, (byte & 0x40) >> 6);
+    gpio_put(D7, (byte & 0x80) >> 7);
+
+    lcd_enable_pulse();
+
+    // Check busy flag
+    while (lcd_busy());
+    gpio_put(RS, type);
+    gpio_put(RW, LCD_RW_WRITE);
+    
+    // Send LSB to LCD
+    gpio_put(D4, (byte & 0x01) >> 0);
+    gpio_put(D5, (byte & 0x02) >> 1);
+    gpio_put(D6, (byte & 0x04) >> 2);
+    gpio_put(D7, (byte & 0x08) >> 3);
+    
+    lcd_enable_pulse();
+    while (lcd_busy());
+}
+
+// Send initial command
+void lcd_init_cmd(uint8_t init_cmd) {
     gpio_put(RS, LCD_RS_CMD);
     gpio_put(RW, LCD_RW_WRITE);
-    gpio_put(E, LCD_DISABLE);
+    lcd_send_4bit(init_cmd, LCD_RS_CMD);
+}
+
+void lcd_set_function (uint8_t bit_mode, uint8_t lines, uint8_t dots) {
+    gpio_put(RS, LCD_RS_CMD);
+    gpio_put(RW, LCD_RW_WRITE);
+    lcd_send_4bit(LCD_SET_FUNCTION | bit_mode | lines | dots, LCD_RS_CMD);
+}
+
+void lcd_onoff_control(uint8_t onoff_disp, uint8_t onoff_cursor, uint8_t onoff_blink) {
+    gpio_put(RS, LCD_RS_CMD);
+    gpio_put(RW, LCD_RW_WRITE);
+    lcd_send_4bit(LCD_ONOFF_CONTROL | onoff_disp | onoff_cursor | onoff_blink, LCD_RS_CMD);
+}
+
+void lcd_clear_screen(void) {
+    gpio_put(RS, LCD_RS_CMD);
+    gpio_put(RW, LCD_RW_WRITE);
+    lcd_send_4bit(LCD_CLEAR, LCD_RS_CMD);
+}
+
+void lcd_entry_mode(uint8_t cursor_move, uint8_t display_move) {
+    gpio_put(RS, LCD_RS_CMD);
+    gpio_put(RW, LCD_RW_WRITE);
+    lcd_send_4bit(LCD_ENTRY_MODE | cursor_move | display_move, LCD_RS_CMD);
+}
+
+void lcd_cursor_at_home(void) {
+    gpio_put(RS, LCD_RS_CMD);
+    gpio_put(RW, LCD_RW_WRITE);
+    lcd_send_4bit(LCD_CURSOR_HOME, LCD_RS_CMD);
+}
+
+void lcd_set_address_ddram (uint8_t address) {
+    gpio_put(RS, LCD_RS_CMD);
+    gpio_put(RW, LCD_RW_WRITE);
+    lcd_send_4bit(address, LCD_RS_CMD);
+}
+
+// Initialize the LCD
+void lcd_init(void) {
+    ports_init();
+    sleep_us(15000);
+    printf("Empezando...\n");
+    lcd_init_cmd(LCD_INITIALIZE_CMD);
+
+    sleep_us(4100);
+    lcd_init_cmd(LCD_INITIALIZE_CMD);
+
+    sleep_us(100);
+    lcd_init_cmd(LCD_INITIALIZE_CMD);
+
+    sleep_us(100);
+    printf("Inicialización terminada!\n");
+
+    // Select lines and dots per character
+    lcd_set_function(LCD_SET_FUNCTION_4BITS, LCD_SET_FUNCTION_2LINE, LCD_SET_FUNCTION_5x10);
+    // Turn on the display and turn off the cursor and blinking
+    lcd_onoff_control(LCD_ONOFF_CONTROL_DISP_ON, LCD_ONOFF_CONTROL_CURSOR_OFF, LCD_ONOFF_CONTROL_BLINK_OFF);
+    // LCD clear
+    lcd_clear_screen();
+    // Set entry mode
+    lcd_entry_mode(LCD_ENTRY_MODE_CURSOR_INC, LCD_ENTRY_MODE_DIPSNOSHIFT);
+}
+
+void lcd_send_char(uint8_t character) {
+    gpio_put(RS, LCD_RS_DATA);
+    gpio_put(RW, LCD_RW_WRITE);
+    lcd_send_4bit(character, LCD_RS_DATA);
+}
+
+void lcd_write_msg(uint8_t *msg) {
+    lcd_set_address_ddram(0x00);
+
+    while (*msg != '\0') {
+        lcd_send_char(*(msg++));
+    }
 }
