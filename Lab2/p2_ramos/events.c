@@ -30,6 +30,13 @@ void events_controller(void) {
 						printf("Tecla: %c\n", key);
 						print_current_time();
 					#endif
+					#if RUN_MODE == DEBUG
+						if (key == 'A') {
+							printf("Tecla: %c\n", key);
+							print_date_and_time();
+						}
+						
+					#endif
 				}
 			}
 		}
