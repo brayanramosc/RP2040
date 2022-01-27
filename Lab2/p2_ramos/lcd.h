@@ -66,6 +66,8 @@
 #define LCD_RW_READ                     1
 #define LCD_DISABLE                     0
 #define LCD_ENABLE                      1
+#define LCD_COL1_LINE1                  0x00    
+#define LCD_COL1_LINE2                  0x40                
 
 #define LCD_BYTE_MSB(b)                 (((uint8_t)(b) >> 4) & 0x0F)
 #define LCD_BYTE_LSB(b)                 (((uint8_t)(b) >> 0) & 0x0F)
@@ -74,7 +76,7 @@ void ports_init(void);
 bool lcd_busy(void);
 void lcd_init_cmd(uint8_t);
 void lcd_enable_pulse(void);
-void lcd_send_4bit(uint8_t, bool);
+void lcd_send_4bit(uint8_t);
 void lcd_set_function(uint8_t, uint8_t, uint8_t);
 void lcd_onoff_control(uint8_t, uint8_t, uint8_t);
 void lcd_clear_screen(void);
@@ -82,6 +84,6 @@ void lcd_entry_mode(uint8_t, uint8_t);
 void lcd_set_address_ddram (uint8_t);
 void lcd_init(void);
 void lcd_send_char(uint8_t);
-void lcd_write_msg(uint8_t *);
+void lcd_write_msg(uint8_t *, uint8_t);
 
 #endif

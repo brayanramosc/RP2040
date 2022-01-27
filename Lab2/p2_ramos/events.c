@@ -14,6 +14,8 @@ char 		key;
 
 // Events controller
 void events_controller(void) {
+	lcd_write_msg(CONGIF_MESSAGE, LCD_COL1_LINE2);
+	
 	while (true) {
 		if (!PENDING_EVENTS) {
 			WAITFORINT();
@@ -29,17 +31,12 @@ void events_controller(void) {
 				if (key != 'N') {
 					#if RUN_MODE == DEBUG
 						printf("Tecla: %c\n", key);
-						//print_current_time();
 					#endif
 					#if RUN_MODE == DEBUG
 						if (key == 'A') {
 							printf("Tecla: %c\n", key);
 							print_date_and_time();
 							printf("\n");
-						}
-						if (key == 'B') {
-							printf("Tecla: %c\n", key);
-							lcd_write_msg(CONGIF_MESSAGE);
 						}
 						
 					#endif
