@@ -1,14 +1,13 @@
 #include "pico/stdlib.h"
-#include <stdio.h>
 #include <time.h>
 
 #include "timer.h"
+#include "events.h"
 
 repeating_timer_t timer;
-volatile bool timer_request = false;
 
 bool timer_callback(repeating_timer_t *t){
-    timer_request = true;
+    EV_TIMER = 1;
     return true;
 }
 

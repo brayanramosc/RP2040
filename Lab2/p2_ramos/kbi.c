@@ -1,18 +1,19 @@
-#include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 
 #include "kbi.h"
+#include "events.h"
 
-volatile bool key_pressed = false;
+// Characters for a 4x4 keyboard
 char keys[4][4] =   {   '1', '2', '3', 'A', 
                         '4', '5', '6', 'B', 
                         '7', '8', '9', 'C', 
                         '*', '0', '#', 'D'
                     };
 
+// ISR
 void kbi_irq_callback(uint gpio, uint32_t events) {
-    key_pressed = true;
+    EV_KBI = 1;
 }
 
 void set_rows_as_output(){
@@ -33,9 +34,21 @@ void set_rows_as_output(){
     gpio_pull_up(COL2);
     gpio_pull_up(COL3);
     gpio_pull_up(COL4);
+
+    // Configure GPIO Interrupts
+    gpio_set_irq_enabled_with_callback(COL1, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
+    gpio_set_irq_enabled(COL2, GPIO_IRQ_EDGE_FALL, true);
+    gpio_set_irq_enabled(COL3, GPIO_IRQ_EDGE_FALL, true);
+    gpio_set_irq_enabled(COL4, GPIO_IRQ_EDGE_FALL, true);
 }
 
 void set_rows_as_input(){
+    // Configure GPIO Interrupts
+    gpio_set_irq_enabled(COL1, GPIO_IRQ_EDGE_FALL, false);
+    gpio_set_irq_enabled(COL2, GPIO_IRQ_EDGE_FALL, false);
+    gpio_set_irq_enabled(COL3, GPIO_IRQ_EDGE_FALL, false);
+    gpio_set_irq_enabled(COL4, GPIO_IRQ_EDGE_FALL, false);
+
     // Rows init
     gpio_set_dir(ROW1, GPIO_IN);
     gpio_set_dir(ROW2, GPIO_IN);
@@ -48,7 +61,7 @@ void set_rows_as_input(){
     gpio_set_dir(COL3, GPIO_OUT);
     gpio_set_dir(COL4, GPIO_OUT);
 
-    // Pull ups
+    // Enable pull ups
     gpio_pull_up(ROW1);
     gpio_pull_up(ROW2);
     gpio_pull_up(ROW3);
@@ -66,12 +79,6 @@ void kbi_init(){
     gpio_init(COL3);
     gpio_init(COL4);
     set_rows_as_output();
-
-    // IRQ enable
-    gpio_set_irq_enabled_with_callback(COL1, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
-    gpio_set_irq_enabled_with_callback(COL2, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
-    gpio_set_irq_enabled_with_callback(COL3, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
-    gpio_set_irq_enabled_with_callback(COL4, GPIO_IRQ_EDGE_FALL, true, &kbi_irq_callback);
 }
 
 char get_key(){
@@ -93,8 +100,7 @@ char get_key(){
     else if (!gpio_get(ROW4)) row = 3;
     else row = 4;
 
-    if (row == 4 || col == 4)
-    {
+    if (row == 4 || col == 4) {
         set_rows_as_output();
         return 'N';
     }

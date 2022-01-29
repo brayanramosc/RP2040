@@ -15,14 +15,17 @@ pico_sdk_init()
 # Indicarle a CMake los archivos de nuestro programa
 add_executable(${PROJECT_NAME}
         main.c
+        events.c
         rtc.c
         timer.c
         kbi.c
+        lcd.c
+        utils.c
 )
 
 # Habilitar comunicación por USB
-pico_enable_stdio_usb(${PROJECT_NAME} 1)
-pico_enable_stdio_uart(${PROJECT_NAME} 0)
+# pico_enable_stdio_usb(${PROJECT_NAME} 1)
+# pico_enable_stdio_uart(${PROJECT_NAME} 0)
 
 # Crear archivos de salida
 pico_add_extra_outputs(${PROJECT_NAME})
