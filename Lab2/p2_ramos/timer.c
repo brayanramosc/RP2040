@@ -1,5 +1,4 @@
 #include "pico/stdlib.h"
-#include <stdio.h>
 #include <time.h>
 
 #include "timer.h"

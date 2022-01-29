@@ -13,6 +13,7 @@
 #define D6  20
 #define D7  19
 
+// Commands for the LCD
 #define LCD_CLEAR                       0x01
 #define LCD_CURSOR_HOME                 0x02
 #define LCD_ENTRY_MODE                  0x04
@@ -60,6 +61,7 @@
 #define LCD_SET_FUNCTION_5x10           0x04
 #define LCD_SET_FUNCTION_5x8            0x00
 
+// LCD control flags
 #define LCD_RS_CMD                      0
 #define LCD_RS_DATA                     1
 #define LCD_RW_WRITE                    0
@@ -67,6 +69,7 @@
 #define LCD_DISABLE                     0
 #define LCD_ENABLE                      1
 
+// Columns and lines of LCD 16x2
 #define LCD_COL1_LINE1                  0x00
 
 #define LCD_COL1_LINE2                  0x40
@@ -83,6 +86,7 @@
 #define LCD_BYTE_MSB(b)                 (((uint8_t)(b) >> 4) & 0x0F)
 #define LCD_BYTE_LSB(b)                 (((uint8_t)(b) >> 0) & 0x0F)
 
+// Functions
 void ports_init(void);
 bool lcd_busy(void);
 void lcd_init_cmd(uint8_t);

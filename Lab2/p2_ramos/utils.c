@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "pico/stdlib.h"
 #include "string.h"
 #include "utils.h"
@@ -13,9 +12,7 @@ uint8_t 	minute	= 0;
 uint8_t     mode    = 0;
 
 void print_two_lines(bool clear, uint8_t *msg1, uint8_t *msg2, uint8_t dir_msg1, uint8_t dir_msg2) {
-    if (clear) {
-        lcd_clear_screen();
-    }
+    if (clear) lcd_clear_screen();
     
     lcd_write_msg(msg1, LCD_COL1_LINE1);
     lcd_write_msg(msg2, dir_msg2);

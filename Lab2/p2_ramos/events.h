@@ -1,6 +1,7 @@
 #ifndef _EVENTS_H_
 #define _EVENTS_H_
 
+// Event handling struct
 typedef union {
     uint8_t reg;
     struct{
@@ -15,26 +16,25 @@ typedef union {
     }flags;
 }_events_str;
 
-typedef struct {
-    uint16_t year   : 12;
-    uint8_t month   : 4;
-    uint8_t days    : 5;
-}date_str;
-
 extern volatile _events_str _events;
 
+// Events definitions
 #define PENDING_EVENTS  _events.reg
 #define EV_TIMER        _events.flags.flag0
 #define EV_KBI          _events.flags.flag1 
 #define EV_RTC          _events.flags.flag2
 
-#define RUN_MODE DEBUG
+// Value for run mode
+#define RUN_MODE NDEBUG
+
+// Help values
 #define PRINT_TIME_COUNT    200
 #define LED_ON_COUNT        12000
 #define CONFIG_MESSAGE      " A para config. "
-#define DEBOUNCE_MS 10
-#define LED_PIN 15
+#define DEBOUNCE_MS         10
+#define LED_PIN             15
 
+// Functions
 void events_controller(void);
 
 #endif

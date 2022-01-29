@@ -1,16 +1,17 @@
-#include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 
 #include "kbi.h"
 #include "events.h"
 
+// Characters for a 4x4 keyboard
 char keys[4][4] =   {   '1', '2', '3', 'A', 
                         '4', '5', '6', 'B', 
                         '7', '8', '9', 'C', 
                         '*', '0', '#', 'D'
                     };
 
+// ISR
 void kbi_irq_callback(uint gpio, uint32_t events) {
     EV_KBI = 1;
 }

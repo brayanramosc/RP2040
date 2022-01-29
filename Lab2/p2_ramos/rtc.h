@@ -1,6 +1,10 @@
 #ifndef _RTC_H
 #define _RTC_H
 
+extern datetime_t t;
+extern datetime_t alarm;
+
+// Functions
 void rtc_setup(void);
 char* get_date_and_time_str(void);
 void set_year(uint16_t);

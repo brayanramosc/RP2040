@@ -10,6 +10,7 @@
 char datetime_buf[256];
 char *datetime_str = &datetime_buf[0];
 
+// Current time struct
 datetime_t t = {
     .year   = 2022,
     .month  = 01,
@@ -20,6 +21,7 @@ datetime_t t = {
     .sec    = 00
 };
 
+// Alarm struct
 datetime_t alarm = {
     .year   = 2022,
     .month  = 01,
@@ -43,7 +45,7 @@ void rtc_setup(void){
 void set_alarm(void) {
     rtc_set_alarm(&alarm, rtc_callback);
 }
- 
+
 char* get_date_and_time_str(void) {
     rtc_get_datetime(&t);
     char *datetime_str = malloc(sizeof (char) * 17);
@@ -75,6 +77,7 @@ void set_hour(uint8_t hour) {
 
 void set_minute(uint8_t min) {
     t.min = min;
+    t.sec = 0;
     rtc_set_datetime(&t);
 }
 
@@ -97,5 +100,6 @@ void set_hour_alarm(uint8_t hour) {
 
 void set_minute_alarm(uint8_t min) {
     alarm.min = min;
+    alarm.sec = 0;
     set_alarm();
 }
