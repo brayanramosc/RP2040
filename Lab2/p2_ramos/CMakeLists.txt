@@ -20,6 +20,7 @@ add_executable(${PROJECT_NAME}
         timer.c
         kbi.c
         lcd.c
+        utils.c
 )
 
 # Habilitar comunicación por USB

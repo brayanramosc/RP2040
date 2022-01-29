@@ -66,8 +66,19 @@
 #define LCD_RW_READ                     1
 #define LCD_DISABLE                     0
 #define LCD_ENABLE                      1
-#define LCD_COL1_LINE1                  0x00    
-#define LCD_COL1_LINE2                  0x40                
+
+#define LCD_COL1_LINE1                  0x00
+
+#define LCD_COL1_LINE2                  0x40
+#define LCD_COL2_LINE2                  0x41
+#define LCD_COL3_LINE2                  0x42
+#define LCD_COL4_LINE2                  0x43
+#define LCD_COL5_LINE2                  0x44
+#define LCD_COL6_LINE2                  0x45
+#define LCD_COL7_LINE2                  0x46
+#define LCD_COL8_LINE2                  0x47
+#define LCD_COL9_LINE2                  0x48
+#define LCD_COL10_LINE2                 0x49
 
 #define LCD_BYTE_MSB(b)                 (((uint8_t)(b) >> 4) & 0x0F)
 #define LCD_BYTE_LSB(b)                 (((uint8_t)(b) >> 0) & 0x0F)

@@ -1,14 +1,17 @@
 #ifndef _RTC_H
 #define _RTC_H
 
-#define TEMP_TIMER_PERIOD 500 
-
-//extern struct repeating_timer temp_timer;
-extern volatile bool alarm_fired;
-
-//bool timer_init(int32_t, int32_t);
 void rtc_setup(void);
-void print_date_and_time(void);
-void print_current_time(void);
+char* get_date_and_time_str(void);
+void set_year(uint16_t);
+void set_month(uint8_t);
+void set_day(uint8_t);
+void set_hour(uint8_t);
+void set_minute(uint8_t);
+void set_year_alarm(uint16_t);
+void set_month_alarm(uint8_t);
+void set_day_alarm(uint8_t);
+void set_hour_alarm(uint8_t);
+void set_minute_alarm(uint8_t);
 
 #endif

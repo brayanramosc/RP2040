@@ -17,8 +17,6 @@ int main(){
         while (!stdio_usb_connected());
     #endif
 
-    gpio_init(LED_PIN);
-    gpio_set_dir(LED_PIN, GPIO_OUT);
     kbi_init();
     rtc_setup();
     lcd_init();
