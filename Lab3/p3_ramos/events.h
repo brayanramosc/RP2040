@@ -27,8 +27,9 @@ extern volatile _events_str _events;
 #define RUN_MODE NDEBUG
 
 // Help values
-#define CONFIG_MESSAGE      " A para config. "
-#define DEBOUNCE_MS         10
+#define OPT1_MESSAGE    "1. Seguimiento"
+#define OPT2_MESSAGE    "2. Consulta"
+#define DEBOUNCE_MS      10
 
 // Functions
 void events_controller(void);
