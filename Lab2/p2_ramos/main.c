@@ -5,8 +5,6 @@
 #include "timer.h"
 #include "lcd.h"
 
-#define MAIN_PERIOD 5
-
 int main(){
     // Initialization
     stdio_init_all();
@@ -24,9 +22,7 @@ int main(){
     while (!timer_init(MAIN_PERIOD));
 
     // Infinite loop
-    while (true){
-        events_controller();
-    }
+    events_controller();
 
     return 0;
 }
