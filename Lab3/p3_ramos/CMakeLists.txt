@@ -35,4 +35,5 @@ target_link_libraries(
         pico_stdlib
         hardware_rtc
         hardware_gpio
+        hardware_i2c
 )
