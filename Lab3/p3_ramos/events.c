@@ -11,6 +11,7 @@
 volatile _events_str _events;
 uint8_t 	debounce_counter 	= 0;
 bool 		isCounting 	= false;
+bool 		isDataOnUART = false;
 char 		key[2];
 uint8_t 	state 	= 0;
 
@@ -39,6 +40,12 @@ void events_controller(void) {
 
 			debounce_counter = 0;
 			isCounting = true;
+		}
+
+		if (EV_UART) {
+			EV_UART = 0;
+
+			isDataOnUART = true;
 		}
 	}
 }

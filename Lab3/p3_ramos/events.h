@@ -22,6 +22,7 @@ extern volatile _events_str _events;
 #define PENDING_EVENTS  _events.reg
 #define EV_TIMER        _events.flags.flag0
 #define EV_KBI          _events.flags.flag1 
+#define EV_UART         _events.flags.flag2
 
 // Value for run mode
 #define RUN_MODE NDEBUG

@@ -6,12 +6,17 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/uart.h"
+#include "events.h"
 #include "uart_gps.h"
 
 static int chars_rxed = 0;
 
 // RX interrupt handler
-void on_uart_rx() {
+void uart_handler(void) {
+    EV_UART = 1;
+}
+
+void read_data_from_uart (void) {
     while (uart_is_readable(UART_ID)) {
         uint8_t ch = uart_getc(UART_ID);
         // Can we send it back?
@@ -40,7 +45,7 @@ void uart_gps_init (void) {
 
     // Set up and enable the interrupt handlers
     int UART_IRQ = UART_ID == uart0 ? UART0_IRQ : UART1_IRQ;
-    irq_set_exclusive_handler(UART_IRQ, on_uart_rx);
+    irq_set_exclusive_handler(UART_IRQ, uart_handler);
     irq_set_enabled(UART_IRQ, true);
 
     // Enable the UART to send interrupts - RX only
