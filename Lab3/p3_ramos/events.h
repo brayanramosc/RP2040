@@ -18,7 +18,7 @@ typedef union {
 
 typedef union {
     float fp;
-    uint8_t chr[4];
+    uint8_t bytes[4];
 }ieee754;
 
 extern volatile _events_str _events;
