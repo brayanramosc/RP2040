@@ -15,12 +15,17 @@
 #define BYTES_PER_PAGE      32
 
 #define FIRST_ADDR          0x0000
+#define FIRST_DATA_ADDR     0x0008
+#define KEY_VALUE           0x1B3F
+#define W_ADDR              0x0004
+#define R_ADDR              0x0006
 #define MSB_ADRESS(hex)     ((hex) >> 8)
 #define LSB_ADRESS(hex)     (((hex) >> 0) & 0xFF)
 
 extern uint8_t data_buff[4];
 
 // Functions
+void init_adresses (void);
 void i2c_eeprom_init (void);
 void erase_data (void);
 void write_block_to_eeprom (uint8_t*);

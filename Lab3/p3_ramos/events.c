@@ -19,7 +19,7 @@ uint8_t 	state 	= 0;
 // Events controller
 void events_controller(void) {
 	lat.fp = 2.531545;
-	erase_data();
+	//erase_data();
 	lcd_write_msg(OPT1_MESSAGE, LCD_COL1_LINE1);
 	lcd_write_msg(OPT2_MESSAGE, LCD_COL1_LINE2);
 
@@ -38,7 +38,6 @@ void events_controller(void) {
 				if (key[0] != 'N') {
 					//else config_handler(&state, key);
 					if (key[0] == 'A') {
-						printf("Sent: %c %c %c %c\n", lat.bytes[0], lat.bytes[1], lat.bytes[2], lat.bytes[3]);
 						write_block_to_eeprom(lat.bytes);
 					}
 					if (key[0] == 'B') {
@@ -49,6 +48,8 @@ void events_controller(void) {
 						lat.bytes[2] = data_buff[2];
 						lat.bytes[3] = data_buff[3];
 						printf("FP: %f\n", lat.fp);
+					}if (key[0] == 'C') {
+						erase_data();
 					}
 				}
 			}
