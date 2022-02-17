@@ -19,6 +19,7 @@ add_executable(${PROJECT_NAME}
         timer.c
         kbi.c
         lcd.c
+        uart_gps.c
 )
 
 # Habilitar comunicación por USB
@@ -32,6 +33,7 @@ pico_add_extra_outputs(${PROJECT_NAME})
 target_link_libraries(
         ${PROJECT_NAME}
         pico_stdlib
-        hardware_rtc
         hardware_gpio
+        hardware_uart
+        hardware_irq
 )

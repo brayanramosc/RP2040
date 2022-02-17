@@ -1,12 +1,12 @@
+#include <stdio.h>
 #include "pico/stdlib.h"
 #include "string.h"
 #include "events.h"
 #include "general.h"
-#include "rtc.h"
 #include "kbi.h"
 #include "timer.h"
 #include "lcd.h"
-#include "utils.h"
+#include "uart_gps.h"
 
 volatile _events_str _events;
 uint8_t 	debounce_counter 	= 0;
@@ -29,8 +29,11 @@ void events_controller(void) {
 				isCounting = false;
 				key[0] = get_key();
 
-				if (key[0] != 'N') {
-					else config_handler(&state, key);
+				/*if (key[0] != 'N') {
+					config_handler(&state, key);
+				}*/
+				if (key[0] == 'D') {
+					read_data_from_uart();
 				}
 			}
 		}
@@ -44,6 +47,8 @@ void events_controller(void) {
 
 		if (EV_UART) {
 			EV_UART = 0;
+
+			printf("Evento en UART!");
 
 			isDataOnUART = true;
 		}

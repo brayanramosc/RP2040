@@ -1,9 +1,9 @@
 #include "pico/stdlib.h"
 #include "events.h"
-#include "rtc.h"
 #include "kbi.h"
 #include "timer.h"
 #include "lcd.h"
+#include "uart_gps.h"
 
 #define MAIN_PERIOD 5
 
@@ -18,6 +18,7 @@ int main(){
 
     kbi_init();
     lcd_init();
+    uart_gps_init();
 
     // Check for timer
     while (!timer_init(MAIN_PERIOD));

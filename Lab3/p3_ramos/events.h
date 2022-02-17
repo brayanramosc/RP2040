@@ -25,7 +25,7 @@ extern volatile _events_str _events;
 #define EV_UART         _events.flags.flag2
 
 // Value for run mode
-#define RUN_MODE NDEBUG
+#define RUN_MODE DEBUG
 
 // Help values
 #define CONFIG_MESSAGE      " A para config. "
