@@ -19,6 +19,7 @@ add_executable(${PROJECT_NAME}
         timer.c
         kbi.c
         lcd.c
+        i2c_eeprom.c
 )
 
 # Habilitar comunicación por USB
@@ -34,4 +35,5 @@ target_link_libraries(
         pico_stdlib
         hardware_rtc
         hardware_gpio
+        hardware_i2c
 )

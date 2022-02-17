@@ -1,11 +1,9 @@
 #include "pico/stdlib.h"
 #include "events.h"
-#include "rtc.h"
 #include "kbi.h"
 #include "timer.h"
 #include "lcd.h"
-
-#define MAIN_PERIOD 5
+#include "i2c_eeprom.h"
 
 int main(){
     // Initialization
@@ -18,6 +16,7 @@ int main(){
 
     kbi_init();
     lcd_init();
+    i2c_eeprom_init();
 
     // Check for timer
     while (!timer_init(MAIN_PERIOD));
