@@ -20,6 +20,7 @@ add_executable(${PROJECT_NAME}
         kbi.c
         lcd.c
         uart_gps.c
+        i2c_eeprom.c
 )
 
 # Habilitar comunicación por USB
@@ -36,4 +37,5 @@ target_link_libraries(
         hardware_gpio
         hardware_uart
         hardware_irq
+        hardware_i2c
 )

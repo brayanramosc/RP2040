@@ -16,6 +16,11 @@ typedef union {
     }flags;
 }_events_str;
 
+typedef union {
+    float fp;
+    uint8_t bytes[4];
+}ieee754;
+
 extern volatile _events_str _events;
 
 // Events definitions
@@ -25,11 +30,13 @@ extern volatile _events_str _events;
 #define EV_UART         _events.flags.flag2
 
 // Value for run mode
-#define RUN_MODE DEBUG
+#define RUN_MODE        DEBUG
 
 // Help values
-#define CONFIG_MESSAGE      " A para config. "
-#define DEBOUNCE_MS         10
+#define OPT1_MESSAGE    "1. Seguimiento"
+#define OPT2_MESSAGE    "2. Consulta"
+#define MAIN_PERIOD     5
+#define DEBOUNCE_MS     10
 
 // Functions
 void events_controller(void);

@@ -6,17 +6,29 @@
 #include "kbi.h"
 #include "timer.h"
 #include "lcd.h"
+#include "i2c_eeprom.h"
 #include "uart_gps.h"
 
 volatile _events_str _events;
 uint8_t 	debounce_counter 	= 0;
 bool 		isCounting 	= false;
 bool 		isDataOnUART = false;
+//#include "utils.h"
+
+volatile _events_str 	_events;
+ieee754    	lat, longt;
+uint8_t 	debounce_counter = 0;
+bool 		isCounting = false;
 char 		key[2];
 uint8_t 	state 	= 0;
 
 // Events controller
 void events_controller(void) {
+	lat.fp = 2.531545;
+	//erase_data();
+	lcd_write_msg(OPT1_MESSAGE, LCD_COL1_LINE1);
+	lcd_write_msg(OPT2_MESSAGE, LCD_COL1_LINE2);
+
 	while (true) {
 		if (!PENDING_EVENTS) {
 			WAITFORINT();
@@ -34,6 +46,22 @@ void events_controller(void) {
 				}*/
 				if (key[0] == 'D') {
 					read_data_from_uart();
+				if (key[0] != 'N') {
+					//else config_handler(&state, key);
+					if (key[0] == 'A') {
+						write_block_to_eeprom(lat.bytes);
+					}
+					if (key[0] == 'B') {
+						read_from_eeprom();
+						
+						lat.bytes[0] = data_buff[0];
+						lat.bytes[1] = data_buff[1];
+						lat.bytes[2] = data_buff[2];
+						lat.bytes[3] = data_buff[3];
+						printf("FP: %f\n", lat.fp);
+					}if (key[0] == 'C') {
+						erase_data();
+					}
 				}
 			}
 		}
