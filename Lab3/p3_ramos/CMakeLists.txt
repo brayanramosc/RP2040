@@ -14,14 +14,17 @@ pico_sdk_init()
 
 # Indicarle a CMake los archivos de nuestro programa
 add_executable(${PROJECT_NAME}
-        main.c
-        events.c
-        timer.c
-        kbi.c
-        lcd.c
-        uart_gps.c
-        i2c_eeprom.c
+        src/main.c
+        src/events.c
+        src/timer.c
+        src/kbi.c
+        src/lcd.c
+        src/uart_gps.c
+        src/i2c_eeprom.c
 )
+
+# Indicarle a CMake la ubicación de los headers
+include_directories(include)
 
 # Habilitar comunicación por USB
 pico_enable_stdio_usb(${PROJECT_NAME} 1)

@@ -19,7 +19,7 @@ int main(){
 
     kbi_init();
     lcd_init();
-    uart_gps_init();
+    //uart_gps_init();
     i2c_eeprom_init();
 
     // Check for timer

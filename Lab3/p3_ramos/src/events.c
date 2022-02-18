@@ -10,17 +10,13 @@
 #include "uart_gps.h"
 
 volatile _events_str _events;
-uint8_t 	debounce_counter 	= 0;
-bool 		isCounting 	= false;
-bool 		isDataOnUART = false;
-//#include "utils.h"
 
-volatile _events_str 	_events;
 ieee754    	lat, longt;
 uint8_t 	debounce_counter = 0;
 bool 		isCounting = false;
 char 		key[2];
 uint8_t 	state 	= 0;
+bool 		isDataOnUART = false;
 
 // Events controller
 void events_controller(void) {
@@ -46,12 +42,12 @@ void events_controller(void) {
 				}*/
 				if (key[0] == 'D') {
 					read_data_from_uart();
+				}
 				if (key[0] != 'N') {
 					//else config_handler(&state, key);
 					if (key[0] == 'A') {
 						write_block_to_eeprom(lat.bytes);
-					}
-					if (key[0] == 'B') {
+					}else if (key[0] == 'B') {
 						read_from_eeprom();
 						
 						lat.bytes[0] = data_buff[0];
@@ -59,7 +55,7 @@ void events_controller(void) {
 						lat.bytes[2] = data_buff[2];
 						lat.bytes[3] = data_buff[3];
 						printf("FP: %f\n", lat.fp);
-					}if (key[0] == 'C') {
+					}else if (key[0] == 'C') {
 						erase_data();
 					}
 				}
@@ -73,12 +69,12 @@ void events_controller(void) {
 			isCounting = true;
 		}
 
-		if (EV_UART) {
+		/*if (EV_UART) {
 			EV_UART = 0;
 
 			printf("Evento en UART!");
 
 			isDataOnUART = true;
-		}
+		}*/
 	}
 }
