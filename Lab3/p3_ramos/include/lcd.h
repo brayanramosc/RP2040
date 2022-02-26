@@ -71,6 +71,21 @@
 
 // Columns and lines of LCD 16x2
 #define LCD_COL1_LINE1                  0x00
+#define LCD_COL2_LINE1                  0x01
+#define LCD_COL3_LINE1                  0x02
+#define LCD_COL4_LINE1                  0x03
+#define LCD_COL5_LINE1                  0x04
+#define LCD_COL6_LINE1                  0x05
+#define LCD_COL7_LINE1                  0x06
+#define LCD_COL8_LINE1                  0x07
+#define LCD_COL9_LINE1                  0x08
+#define LCD_COL10_LINE1                 0x09
+#define LCD_COL11_LINE1                 0x0A
+#define LCD_COL12_LINE1                 0x0B
+#define LCD_COL13_LINE1                 0x0C
+#define LCD_COL14_LINE1                 0x0D
+#define LCD_COL15_LINE1                 0x0E
+#define LCD_COL16_LINE1                 0x0F
 
 #define LCD_COL1_LINE2                  0x40
 #define LCD_COL2_LINE2                  0x41
@@ -82,6 +97,12 @@
 #define LCD_COL8_LINE2                  0x47
 #define LCD_COL9_LINE2                  0x48
 #define LCD_COL10_LINE2                 0x49
+#define LCD_COL11_LINE2                 0x4A
+#define LCD_COL12_LINE2                 0x4B
+#define LCD_COL13_LINE2                 0x4C
+#define LCD_COL14_LINE2                 0x4D
+#define LCD_COL15_LINE2                 0x4E
+#define LCD_COL16_LINE2                 0x4F
 
 #define LCD_BYTE_MSB(b)                 (((uint8_t)(b) >> 4) & 0x0F)
 #define LCD_BYTE_LSB(b)                 (((uint8_t)(b) >> 0) & 0x0F)
