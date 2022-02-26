@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
+#include "events.h"
 #include "i2c_eeprom.h"
 
 uint16_t w_address = FIRST_ADDR;
@@ -40,9 +41,10 @@ void init_adresses (void) {
         w_address = FIRST_DATA_ADDR;
         r_address = FIRST_DATA_ADDR;
     } 
-
-    printf("Current w_Address 1: %X\n", w_address);
-    printf("Current r_Address 1: %X\n\n", r_address);
+    #if RUN_MODE == DEBUG
+        printf("Current w_Address 1: %X\n", w_address);
+        printf("Current r_Address 1: %X\n\n", r_address);
+    #endif
 }
 
 // Initialise the i2c protocol

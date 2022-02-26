@@ -22,6 +22,8 @@ typedef union {
 }ieee754;
 
 extern volatile _events_str _events;
+extern          ieee754    	lat, longt;
+extern bool     isTimeVisible;
 
 // Events definitions
 #define PENDING_EVENTS  _events.reg
@@ -35,8 +37,13 @@ extern volatile _events_str _events;
 // Help values
 #define OPT1_MESSAGE    "1. Seguimiento"
 #define OPT2_MESSAGE    "2. Consulta"
+#define SYNC_MESSAGE    "Sincronizando..."
+#define TIME_MESSAGE    "Hora: "
+#define LAT_MESSAGE     "Lat: "
+#define LONG_MESSAGE    "Long: "
 #define MAIN_PERIOD     5
 #define DEBOUNCE_MS     10
+#define SHOW_DATA_CNT   650 // 3 Seconds
 
 // Functions
 void events_controller(void);

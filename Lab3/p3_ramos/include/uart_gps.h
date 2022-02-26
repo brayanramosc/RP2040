@@ -11,6 +11,7 @@
 #define UART_RX             13
 #define WRITE               0x00
 #define READ                0x01 
+#define UTC_OFFSET          5
 
 // Functions
 void uart_gps_init (void);

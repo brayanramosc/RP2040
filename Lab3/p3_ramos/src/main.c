@@ -6,8 +6,6 @@
 #include "i2c_eeprom.h"
 #include "uart_gps.h"
 
-#define MAIN_PERIOD 5
-
 int main(){
     // Initialization
     stdio_init_all();
@@ -19,7 +17,7 @@ int main(){
 
     kbi_init();
     lcd_init();
-    //uart_gps_init();
+    uart_gps_init();
     i2c_eeprom_init();
 
     // Check for timer
