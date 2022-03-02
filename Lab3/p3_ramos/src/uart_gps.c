@@ -34,7 +34,6 @@ void uart_handler(void) {
 }
 
 void read_data_from_uart (void) {
-    printf("Char: %c\n", ch);
     switch (charState) {
         case ST_START:
             if (ch == gps_key[ch_idx]) {
@@ -49,12 +48,6 @@ void read_data_from_uart (void) {
                 ch_counter = 0;
             }
             break;
-
-        /*case ST_COMMA_COUNT:
-            if (ch == ',') comma_counter++;
-
-            if (comma_counter == 1) charState = ST_GET_TIME;
-            break;*/
 
         case ST_GET_TIME:
             if (ch == ',' && comma_counter == 1) {
@@ -71,7 +64,7 @@ void read_data_from_uart (void) {
                     snprintf(time, 9, "%c%c:%c%c:%c%c", time_buff[0], time_buff[1], time[2], time[3], time[4], time[5]);
                     lcd_clear_screen();
                     lcd_write_msg(TIME_MESSAGE, LCD_COL1_LINE1);
-                    lcd_write_msg(time, LCD_COL1_LINE1 + 7);
+                    lcd_write_msg(time, LCD_COL8_LINE1);
                 }
                 comma_counter++;
                 charState = ST_GET_LAT;
@@ -89,7 +82,7 @@ void read_data_from_uart (void) {
             coord_buff[0] = ch;
             if(!isTimeVisible && ch != ','){
                 lcd_write_msg(LAT_MESSAGE, LCD_COL1_LINE1);
-                lcd_write_msg(coord_buff, LCD_COL1_LINE1 + 4 + ch_counter);
+                lcd_write_msg(coord_buff, LCD_COL5_LINE1 + ch_counter);
             }
             
             if (ch == '.') {
@@ -97,8 +90,6 @@ void read_data_from_uart (void) {
                 decimal = true;
             }
             else if (ch == ',') {
-                printf("Lat: %f \n", lat.fp);
-
                 comma_counter++;
                 if (ch_counter == 0) {
                     lcd_clear_screen();
@@ -116,6 +107,10 @@ void read_data_from_uart (void) {
             break;
 
         case ST_LAT_SIGN:
+            if (!isTimeVisible && ch != ',') {
+                coord_buff[0] = ch;
+                lcd_write_msg(coord_buff, LCD_COL16_LINE1);
+            }
             if (ch == 'S') lat.fp *= -1;
             else if (ch == ',') charState = ST_GET_LONG;
             
@@ -123,7 +118,6 @@ void read_data_from_uart (void) {
             
         case ST_GET_LONG:
             coord_buff[0] = ch;
-            printf("Longt step: %c\n", coord_buff[0]);
             if(!isTimeVisible && ch != ','){
                 lcd_write_msg(LONG_MESSAGE, LCD_COL1_LINE2);
                 lcd_write_msg(coord_buff, LCD_COL7_LINE2 + ch_counter);
@@ -132,13 +126,8 @@ void read_data_from_uart (void) {
             if (ch == '.') {
                 ch_counter++;
                 decimal = true;
-                /*if(!isTimeVisible){
-                    lcd_write_msg(coord_buff, LCD_COL6_LINE2 + ch_counter);
-                }*/
             }
             else if (ch == ',') {
-                printf("Long: %f \n", longt.fp);
-
                 if (ch_counter == 0) {
                     lcd_clear_screen();
                     lcd_write_msg(SYNC_MESSAGE, LCD_COL1_LINE1);
@@ -148,33 +137,27 @@ void read_data_from_uart (void) {
                 ch_counter++;
                 if(decimal) fact /= 10;
                 longt.fp = decimal ? longt.fp + ((ch & 0x0F)*fact) : longt.fp*10 + (ch & 0x0F);
-                printf("Long: %f \n", longt.fp);
 
                 if(ch_counter == 1 && ch == '0') {
                     ch_counter = 0;
                     break;
                 }
-
-                /*if(!isTimeVisible){
-                    if(ch_counter == 1 && ch == '0') {
-                        ch_counter = 0;
-                        break;
-                    }
-                    /*lcd_write_msg(LONG_MESSAGE, LCD_COL1_LINE2);
-                    lcd_write_msg(coord_buff, LCD_COL6_LINE2 + ch_counter);
-                    //printf("Long: %c \n", ch);
-                }*/
             }
             break;
         
         case ST_LONG_SIGN:
+            if(!isTimeVisible && ch != ',' && ch > '9'){
+                coord_buff[0] = ch;
+                lcd_write_msg(coord_buff, LCD_COL16_LINE2);
+            }
             if (ch == 'W') longt.fp *= -1;
             else if (ch == ',') {
                 if(longt.fp != 0 && lat.fp != 0){
-                    printf("Lat: %f \n", lat.fp);
-                    printf("Long: %f \n", longt.fp);
-                    //write_block_to_eeprom(lat.bytes);
-                    //write_block_to_eeprom(longt.bytes);
+                    if (saveCoords){
+                        write_block_to_eeprom(lat.bytes);
+                        write_block_to_eeprom(longt.bytes);
+                        saveCoords = false;
+                    }
                 }
                 charState = ST_START;
                 ch_counter = 0;
@@ -184,7 +167,6 @@ void read_data_from_uart (void) {
                 comma_counter = 0;
                 decimal = false;
             }
-            
             break;
         
         default:

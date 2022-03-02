@@ -24,9 +24,7 @@ int main(){
     while (!timer_init(MAIN_PERIOD));
 
     // Infinite loop
-    while (true){
-        events_controller();
-    }
+    events_controller();
 
     return 0;
 }

@@ -22,6 +22,8 @@
 #define MSB_ADRESS(hex)     ((hex) >> 8)
 #define LSB_ADRESS(hex)     (((hex) >> 0) & 0xFF)
 
+extern uint16_t w_address;
+extern uint16_t r_address;
 extern uint8_t data_buff[4];
 
 // Functions
