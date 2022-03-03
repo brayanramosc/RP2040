@@ -17,6 +17,7 @@ add_executable(${PROJECT_NAME}
         src/main.c
         src/events.c
         src/timer.c
+        src/adc.c
 )
 
 # Indicarle a CMake la ubicación de los headers
@@ -33,6 +34,7 @@ pico_add_extra_outputs(${PROJECT_NAME})
 target_link_libraries(
         ${PROJECT_NAME}
         pico_stdlib
+        hardware_adc
         hardware_uart
         hardware_irq
 )

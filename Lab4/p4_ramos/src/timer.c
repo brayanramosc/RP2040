@@ -7,7 +7,7 @@
 repeating_timer_t timer;
 
 bool timer_callback(repeating_timer_t *t){
-    EV_TIMER = 1;
+    EV_TIMER = true;
     return true;
 }
 

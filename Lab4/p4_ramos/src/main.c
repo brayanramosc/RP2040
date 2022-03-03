@@ -1,9 +1,7 @@
 #include "pico/stdlib.h"
 #include "events.h"
-#include "kbi.h"
 #include "timer.h"
-#include "lcd.h"
-#include "i2c_eeprom.h"
+#include "adc.h"
 #include "uart_gps.h"
 
 int main(){
@@ -15,13 +13,10 @@ int main(){
         while (!stdio_usb_connected());
     #endif
 
-    kbi_init();
-    lcd_init();
     uart_gps_init();
-    i2c_eeprom_init();
 
     // Check for timer
-    while (!timer_init(MAIN_PERIOD));
+    while (!timer_init(TIMER_PERIOD_MS));
 
     // Infinite loop
     events_controller();

@@ -16,42 +16,23 @@ typedef union {
     }flags;
 }_events_str;
 
-typedef union {
-    float fp;
-    uint8_t bytes[4];
-}ieee754;
-
 extern volatile _events_str _events;
-extern          ieee754    	lat, longt;
-extern bool     isTimeVisible;
-extern bool     saveCoords;
 
 // Events definitions
 #define PENDING_EVENTS  _events.reg
 #define EV_TIMER        _events.flags.flag0
-#define EV_KBI          _events.flags.flag1 
-#define EV_UART         _events.flags.flag2
+#define EV_ADC_LIGHT    _events.flags.flag1
+#define EV_ADC_TEMP     _events.flags.flag2
+#define EV_UART         _events.flags.flag3
 
 // Value for run mode
 #define RUN_MODE        NDEBUG
 
-// Help values
-#define OPT1_MESSAGE    "1. Seguimiento"
-#define OPT2_MESSAGE    "2. Consulta"
-#define SYNC_MESSAGE    "Sincronizando..."
-#define TIME_MESSAGE    "Hora: "
-#define LAT_MESSAGE     "Lat: "
-#define LONG_MESSAGE    "Long: "
-#define NO_USB_MESSAGE1 "  No se detecta "
-#define NO_USB_MESSAGE2 "     USB...     "
-#define MAIN_PERIOD     5
-#define DEBOUNCE_MS     10
-#define SHOW_DATA_CNT   650 // 3 Seconds
-#define TWO_SECONDS_CNT 400 // 2 Seconds
+// Utils
+#define HALF_SECOND_CNT     5   // 0.5 Seconds
+#define ONE_SECONDS_CNT     10  // 1 Second
 
 // Functions
-void get_coords_from_eeprom(void);
-void coords_to_degrees(void);
 void events_controller(void);
 
 #endif

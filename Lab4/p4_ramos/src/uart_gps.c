@@ -1,6 +1,5 @@
 /*
-    Driver to manage GPS module NeoM8 24LC64 with 
-    UART protocol in Raspberry pi Pico → RP2040
+    
 */
 
 #include <stdio.h>
@@ -8,21 +7,12 @@
 #include "hardware/uart.h"
 #include "hardware/irq.h"
 #include "events.h"
-#include "lcd.h"
-#include "i2c_eeprom.h"
 #include "uart_gps.h"
 
 uint8_t ch;
 uint8_t gps_key[] = {'$', 'G', 'N', 'G', 'G', 'A'};
 uint8_t ch_idx = 0;
 uint8_t ch_counter = 0;
-uint8_t comma_counter = 0;
-bool decimal = false;
-float fact = 1;
-uint8_t time[9];
-uint8_t modified_time;
-uint8_t coord_buff[2];
-uint8_t time_buff[3];
 
 enum charStates{ST_START, ST_GET_TIME, ST_GET_LAT, ST_LAT_SIGN, ST_GET_LONG, ST_LONG_SIGN};
 enum charStates charState;
