@@ -14,6 +14,7 @@ void adc_handler () {
     else EV_ADC_TEMP = true;
     
     adc_raw_value = adc_fifo_get();
+    adc_raw_value = adc_fifo_get();
     adc_run(false);
 }
 
@@ -26,7 +27,7 @@ void adc_setup() {
     adc_fifo_setup(
         true,
         false,
-        1,
+        2,
         false,
         false
     );

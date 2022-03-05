@@ -5,6 +5,8 @@
 #include "timer.h"
 #include "adc.h"
 
+volatile _events_str _events;
+
 uint8_t lightReadCnt 	= 0;
 uint8_t tempReadCnt  	= 0;
 bool 	isLightRead	 	= false;
@@ -26,25 +28,20 @@ void events_controller(void) {
 
 			if (isLightRead) {
 				isLightRead = false;
-            	lightPercRead = (raw_value * 100) / ADC_RANGE;
-				printf("Valor crudo para la luz: %d\n", raw_value);
+            	lightPercRead = (adc_raw_value * 100) / ADC_RANGE;
 				printf("Porcentaje de luz leido: %f\n", lightPercRead);
 			}
 			if (isTempRead) {
 				isTempRead = false;
-            	temperature_adc_request = false;
-				voltage_mv = ADC_CONVERSION(raw_value) * 1000;
+				voltage_mv = ADC_CONVERSION(adc_raw_value) * 1000;
 				tempRead = voltage_mv / 10;    // 1°C per 10mV
-				printf("Valor crudo para la temp: %d\n", raw_value);
-				printf("Valor en mV para la temp: %f\n", voltage_mv);
-				printf("Temp leida: \n\n", tempRead);
+				printf("Temp leida: %f\n\n", tempRead/2);
 			}
 
 			if(++lightReadCnt == HALF_SECOND_CNT){
 				lightReadCnt = 0;
 				adc_capture(ADC_NUM_LIGHT);
-			}
-			if(++tempReadCnt == ONE_SECONDS_CNT){
+			} else if(++tempReadCnt == ONE_SECONDS_CNT){
 				tempReadCnt = 0;
 				adc_capture(ADC_NUM_TEMP);
 			}
@@ -57,12 +54,12 @@ void events_controller(void) {
 			EV_ADC_TEMP = false;
 			isTempRead = true;
 		}
-		if (EV_UART) {
+		/*if (EV_UART) {
 			EV_UART = false;
 
 			if(readDataFromUART){
 				read_data_from_uart();
 			}
-		}
+		}*/
 	}
 }

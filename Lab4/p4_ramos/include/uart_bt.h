@@ -1,5 +1,5 @@
-#ifndef _UART_GPS_H_
-#define _UART_GPS_H_
+#ifndef _UART_BT_H_
+#define _UART_BT_H_
 
 // Help values
 #define UART_ID             uart0

@@ -12,8 +12,9 @@ int main(){
     #if RUN_MODE == DEBUG
         while (!stdio_usb_connected());
     #endif
+    adc_setup();
 
-    uart_gps_init();
+    //uart_gps_init();
 
     // Check for timer
     while (!timer_init(TIMER_PERIOD_MS));

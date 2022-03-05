@@ -26,7 +26,7 @@ extern volatile _events_str _events;
 #define EV_UART         _events.flags.flag3
 
 // Value for run mode
-#define RUN_MODE        NDEBUG
+#define RUN_MODE        DEBUG
 
 // Utils
 #define HALF_SECOND_CNT     5   // 0.5 Seconds
