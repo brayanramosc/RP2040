@@ -24,13 +24,7 @@ void adc_setup() {
     adc_gpio_init(ADC_PIN_LIGHT);
     adc_gpio_init(ADC_PIN_TEMP);
 
-    adc_fifo_setup(
-        true,
-        false,
-        2,
-        false,
-        false
-    );
+    adc_fifo_setup(true, false, 2, false, false);
     
     adc_irq_set_enabled(true);
     irq_set_exclusive_handler(ADC_IRQ_FIFO, adc_handler);
