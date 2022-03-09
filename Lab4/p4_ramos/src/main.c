@@ -2,7 +2,7 @@
 #include "events.h"
 #include "timer.h"
 #include "adc.h"
-#include "uart_gps.h"
+#include "pwm.h"
 
 int main(){
     // Initialization
@@ -13,8 +13,7 @@ int main(){
         while (!stdio_usb_connected());
     #endif
     adc_setup();
-
-    //uart_gps_init();
+    pwm_setup();
 
     // Check for timer
     while (!timer_init(TIMER_PERIOD_MS));

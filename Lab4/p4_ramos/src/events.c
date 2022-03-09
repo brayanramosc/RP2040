@@ -4,6 +4,7 @@
 #include "general.h"
 #include "timer.h"
 #include "adc.h"
+#include "pwm.h"
 
 volatile _events_str _events;
 

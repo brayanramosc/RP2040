@@ -2,9 +2,9 @@
 #include "hardware/gpio.h"
 #include "pwm.h"
 
-uint8_t pwm_slice_num;
-uint8_t pwm_chan_0;
-uint8_t pwm_chan_1;
+uint pwm_slice_num;
+uint pwm_chan_0;
+uint pwm_chan_1;
 
 void pwm_setup (void) {
     // Set GPIOs for PWM mode
