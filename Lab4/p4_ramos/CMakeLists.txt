@@ -19,6 +19,7 @@ add_executable(${PROJECT_NAME}
         src/timer.c
         src/adc.c
         src/pwm.c
+        src/uart_bt.c
 )
 
 # Indicarle a CMake la ubicación de los headers

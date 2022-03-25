@@ -3,6 +3,7 @@
 #include "timer.h"
 #include "adc.h"
 #include "pwm.h"
+#include "uart_bt.h"
 
 int main(){
     // Initialization
@@ -14,6 +15,7 @@ int main(){
     #endif
     adc_setup();
     pwm_setup();
+    uart_setup();
 
     // Check for timer
     while (!timer_init(TIMER_PERIOD_MS));

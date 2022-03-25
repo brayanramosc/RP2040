@@ -1,79 +1,104 @@
-/*
-    
-*/
-
 #include <stdio.h>
+#include <stdlib.h>
+
 #include "pico/stdlib.h"
 #include "hardware/uart.h"
 #include "hardware/irq.h"
 #include "events.h"
 #include "uart_bt.h"
 
-uint8_t ch;
-uint8_t gps_key[] = {'$', 'G', 'N', 'G', 'G', 'A'};
+volatile uint8_t ch;
+bool isWaitingForByte = false;
+uint8_t hex[] = {'0', '0'};
+uint8_t dataBuffer[4];
 uint8_t ch_idx = 0;
-uint8_t ch_counter = 0;
+uint8_t mode;
+uint8_t id;
+bool isValidFrame = false;
 
-enum charStates{ST_START, ST_GET_TIME, ST_GET_LAT};
+volatile _fifo_t tx_fifo;
+enum charStates{ST_START, ST_GET_MODE, ST_GET_VALUE, ST_GET_CS};
 enum charStates charState;
 
 // RX interrupt handler
 void uart_handler(void) {
-    EV_UART = 1;
-    ch = uart_getc(UART_ID);
+    if (uart_is_readable(UART_ID)) {
+        EV_UART_RX = true;
+        ch = uart_getc(UART_ID);
+    }
+
+    if(uart_is_writable(UART_ID)) send_data();
+}
+
+bool is_fifo_full(void) {
+    return (tx_fifo.ptr_put + 1) == tx_fifo.ptr_get || (tx_fifo.ptr_put - tx_fifo.ptr_get) == (FIFO_SIZE - 1);
+}
+
+bool is_fifo_empty(void) {
+    return tx_fifo.ptr_put == tx_fifo.ptr_get;
 }
 
 void read_data_from_uart (void) {
     switch (charState) {
         case ST_START:
-            if (ch == gps_key[ch_idx]) {
-                ch_idx++;
-                if (++ch_counter == 6) {
+            if (ch == '$') {
+                charState = ST_GET_MODE;
+                isWaitingForByte = true;
+            }
+            break;
+
+        case ST_GET_MODE:
+            if (waitForByteCnt <= ONE_SECONDS_CNT) {
+                hex[ch_idx] = ch;
+                if (ch_idx == 1) {
                     ch_idx = 0;
-                    ch_counter = 0;
-                    charState = ST_GET_TIME;
-                }
-            }else {
-                ch_idx = 0;
-                ch_counter = 0;
-            }
+                    waitForByteCnt = 0;
+                    
+                    dataBuffer[0] = HEADER_BYTE;
+                    dataBuffer[1] = (int)strtol(hex, NULL, 16);
+                    mode = GET_MODE(dataBuffer[1]);
+                    id = GET_ID(dataBuffer[1]);
+                    printf("\n Mode: %d, %X \n", mode, mode);
+                    printf("ID: %d, %X \n", id, id);
+                    charState = ST_GET_VALUE;
+                } else ch_idx++;
+            } else charState = ST_START;
+            
             break;
 
-        case ST_GET_TIME:
-            if (ch == ',' && comma_counter == 1) {
-                if (ch_counter == 0) {
-                    lcd_clear_screen();
-                    lcd_write_msg(SYNC_MESSAGE, LCD_COL1_LINE1);
-                }
-            } else if(ch == ',' && comma_counter == 0) comma_counter++;
-            else {
-                ch_counter++;
-                time[ch_idx] = ch;
-                ch_idx++;
-            }
+        case ST_GET_VALUE:
+            isWaitingForByte = true;
+            if (waitForByteCnt <= ONE_SECONDS_CNT) {
+                hex[ch_idx] = ch;
+                if (ch_idx == 1) {
+                    ch_idx = 0;
+                    waitForByteCnt = 0;
+
+                    dataBuffer[2] = (int)strtol(hex, NULL, 16);
+                    printf("value: %d, %X \n", dataBuffer[2], dataBuffer[2]);
+                    charState = ST_GET_CS;
+                } else ch_idx++;
+            } else charState = ST_START;
+            
             break;
 
-        case ST_GET_LAT:
-            coord_buff[0] = ch;
-            if(!isTimeVisible && ch != ','){
-                lcd_write_msg(LAT_MESSAGE, LCD_COL1_LINE1);
-                lcd_write_msg(coord_buff, LCD_COL5_LINE1 + ch_counter);
-            }
-            else if (ch == ',') {
-                comma_counter++;
-                if (ch_counter == 0) {
-                    lcd_clear_screen();
-                    lcd_write_msg(SYNC_MESSAGE, LCD_COL1_LINE1);
-                }
-                charState = ST_START;
-                ch_counter = 0;
-                decimal = false;
-                fact = 1;
-            }else{
-                ch_counter++;
-                if(decimal) fact /= 10;
-                lat.fp = decimal ? lat.fp + ((ch & 0x0F)*fact) : lat.fp*10 + (ch & 0x0F);
-            }
+        case ST_GET_CS:
+            isWaitingForByte = true;
+            if (waitForByteCnt <= ONE_SECONDS_CNT) {
+                hex[ch_idx] = ch;
+                if (ch_idx == 1) {
+                    ch_idx = 0;
+                    isWaitingForByte = false;
+                    waitForByteCnt = 0;
+
+                    dataBuffer[3] = (int)strtol(hex, NULL, 16);
+                    printf("Checksum: %d, %X \n", dataBuffer[3], dataBuffer[3]);
+                    isValidFrame = ((HEADER_BYTE + dataBuffer[1] + dataBuffer[2]) & 0xFF) == dataBuffer[3] ? true : false;
+                    printf("Frame is: %d\n\n", isValidFrame);
+                    charState = ST_START;
+                } else ch_idx++;
+            } else charState = ST_START;
+
             break;
         
         default:
@@ -81,7 +106,26 @@ void read_data_from_uart (void) {
     }
 }
 
-void uart_gps_init (void) {
+void put_in_fifo (uint8_t val) {
+    tx_fifo.buff[tx_fifo.ptr_put] = val;
+    if (tx_fifo.ptr_put == (FIFO_SIZE - 1)) tx_fifo.ptr_put = 0;
+    else tx_fifo.ptr_put++; 
+    uart_set_irq_enables(UART_ID, true, true);
+}
+
+void send_data (void) {
+    uint8_t val;
+
+    if (!is_fifo_empty()) {
+        val = tx_fifo.buff[tx_fifo.ptr_get];
+        if (tx_fifo.ptr_get == (FIFO_SIZE - 1)) tx_fifo.ptr_get = 0;
+        else tx_fifo.ptr_get++; 
+        printf("Value to send: %d\n", val);
+        uart_putc(UART_ID, (char)val);
+    } else uart_set_irq_enables(UART_ID, true, false);
+}
+
+void uart_setup (void) {
     // Initialise UART
     uart_init(UART_ID, BAUD_RATE);
 
@@ -102,4 +146,8 @@ void uart_gps_init (void) {
 
     // Enable the UART to send interrupts - RX only
     uart_set_irq_enables(UART_ID, true, false);
+
+    // Initialise SW FIFO
+    tx_fifo.ptr_put = 0;
+    tx_fifo.ptr_get = 0;
 }

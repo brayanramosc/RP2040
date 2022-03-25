@@ -9,7 +9,7 @@
 
 #define PWM_FREQ_10KHZ      12500
 #define PWM_TOP             PWM_FREQ_10KHZ*2
-#define PWM_LEVEL_VALUE     PWM_TOP/2
+#define PWM_LEVEL_VALUE     0   //PWM_TOP/2
 
 // Extern variables
 extern uint pwm_chan_0;
