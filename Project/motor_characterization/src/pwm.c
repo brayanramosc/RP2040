@@ -1,0 +1,50 @@
+#include "hardware/pwm.h"
+#include "hardware/gpio.h"
+#include "pwm.h"
+
+uint pwm_motor_slice_num;
+uint pwm_measure_slice_num;
+uint pwm_motor_chan;
+uint pwm_measure_chan;
+
+float measure_frequency (uint gpio) {
+    pwm_config cfg = pwm_get_default_config();
+    pwm_config_set_clkdiv_mode(&cfg, PWM_DIV_B_RISING);
+    pwm_config_set_clkdiv(&cfg, PWM_MEASURE_PERIOD);
+    pwm_init(pwm_measure_slice_num, &cfg, false);
+    gpio_set_function(gpio, GPIO_FUNC_PWM);
+
+    pwm_set_enabled(pwm_measure_slice_num, true);
+    sleep_ms(10);
+    pwm_set_enabled(pwm_measure_slice_num, false);
+
+    uint16_t counter = pwm_get_counter(pwm_measure_slice_num);
+    float freq = counter / 10;
+
+    return freq;
+}
+
+void pwm_setup (void) {
+    // Set GPIOs for PWM mode
+    gpio_set_function(PWM_GPIO_MOTOR, GPIO_FUNC_PWM);
+
+    // Check channel for measure pin
+    assert(pwm_gpio_to_channel(PWM_MEASURE_PIN) == PWM_CHAN_B);
+
+    // Get slice and channels
+    pwm_motor_slice_num = pwm_gpio_to_slice_num(PWM_GPIO_MOTOR);
+    pwm_measure_slice_num = pwm_gpio_to_slice_num(PWM_MEASURE_PIN);
+    pwm_motor_chan = pwm_gpio_to_channel(PWM_GPIO_MOTOR);
+    pwm_measure_chan = pwm_gpio_to_channel(PWM_MEASURE_PIN);
+
+    // Set frequency and duty
+    pwm_set_wrap(pwm_motor_slice_num, PWM_TOP);
+    pwm_set_chan_level(pwm_motor_slice_num, pwm_motor_chan, PWM_LEVEL_VALUE);
+
+    // Set the PWM running
+    pwm_set_enabled(pwm_motor_slice_num, true);
+}
+
+void pwm_change_level(uint16_t level) {
+    pwm_set_chan_level(pwm_motor_slice_num, PWM_MOTOR_CH, level);
+}
