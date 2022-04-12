@@ -1,7 +1,7 @@
 #ifndef _TIMER_H
 #define _TIMER_H    
 
-#define TIMER_PERIOD_MS     100     // 100 ms
+#define TIMER_PERIOD_MS     10     // 10 ms
 
 extern repeating_timer_t timer;
 
