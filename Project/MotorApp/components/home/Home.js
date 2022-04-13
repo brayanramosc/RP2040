@@ -15,14 +15,14 @@ const Home = ({ navigation }) => {
             <Text style={styles.subtitle} >
                 Sistemas Embebidos Avanzados - 2021-2
             </Text>
-            <TouchableOpacity 
+            {/*<TouchableOpacity 
                 onPress={() => navigation.navigate('Bluetooth')}
                 style={styles.button} 
             >
                 <Text style={styles.textButton} >
                     Ingresar
                 </Text>
-            </TouchableOpacity>
+            </TouchableOpacity>*/}
         </View>
     )
 }
