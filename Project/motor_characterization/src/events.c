@@ -21,15 +21,13 @@ void events_controller(void) {
 
 		if (EV_TIMER) {
 			EV_TIMER = false;
-			if (isWaitingForByte) waitForByteCnt++;
 
 			if (++counter == 2) {
 				counter = 0;
 				freq = measure_frequency(PWM_GPIO_MEASURE);
 
-				printf("Frecuencia real: %d KHz\n\n", clock_get_hz(clk_sys) / PWM_LEVEL_VALUE /1000);
-				printf("Frecuencia medida: %f Hz\n", freq);
-				printf("Frecuencia medida: %f KHz\n\n", freq/1000);
+				printf("Frecuencia real: %d KHz\n", clock_get_hz(clk_sys) / PWM_LEVEL_VALUE /1000);
+				printf("Frecuencia medida: %f KHz\n\n", freq);
 			}
 			
 		}

@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/pwm.h"
 #include "hardware/gpio.h"
@@ -20,6 +21,9 @@ float measure_frequency (uint gpio) {
 
     uint16_t counter = pwm_get_counter(pwm_measure_slice_num);
     float freq = counter / 10.f;
+
+    printf("Slice num: %d\n", pwm_measure_slice_num);
+    printf("Counter: %d\n", counter);
 
     return freq;
 }
