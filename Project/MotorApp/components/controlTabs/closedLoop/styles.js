@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 export const panelStyles = StyleSheet.create({
     container: {
@@ -32,8 +32,18 @@ export const panelStyles = StyleSheet.create({
     },
     img: {
         alignSelf: 'center',
-        marginBottom: 60,
+        marginBottom: 40,
         height: 100, 
         width: 100
+    },
+    textButton: {
+        textAlign: 'center',
+        fontSize: 18,
+        color: 'white'
+    },
+    button: {
+        backgroundColor: 'deepskyblue',
+        padding: 8,
+        borderRadius: 5
     }
 })

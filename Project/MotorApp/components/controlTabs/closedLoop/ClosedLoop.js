@@ -1,77 +1,74 @@
 import React, { useState } from 'react';
-import { View, Image, Text, StyleSheet } from 'react-native';
+import { View, Image, Text, TouchableOpacity } from 'react-native';
 
 // Components
 import CustomSlider from '../CustomSlider';
+import ConstantInput from './ConstantInput';
 
 // Images
 import control_panel from '../../../assets/admin-panel.png';
 import motor_icon from '../../../assets/motor.png';
 
+// Styles
+import { panelStyles } from './styles';
+
 const ClosedLoop = () => {
     const [value, setValue] = useState(0);
+    const [pValue, setPValue] = useState(0);
+    const [iValue, setIValue] = useState(0);
+
+    const onChange = (value, constantName) => {
+        (constantName === 'P') ? setPValue(value) : setIValue(value);
+    }
+
+    const onSubmit = () => {
+        if (value !== '') {
+            console.log("P: ", pValue);
+            console.log("I: ", iValue);
+        }
+    }
 
     return (
-        <View style={styles.container} >
-            <Text style={styles.title} >
+        <View style={panelStyles.container} >
+            <Text style={panelStyles.title} >
                 Control en lazo cerrado
             </Text>
             <Image
                 source={control_panel}
-                style={styles.img}
+                style={panelStyles.img}
             />
 
-            <View style={styles.percSliderWrapper} >
-                <View style={styles.percWrapper} >
+            <View style={panelStyles.percSliderWrapper} >
+                <View style={panelStyles.percWrapper} >
                     <Image
                         source={motor_icon}
                     />
-                    <Text style={styles.percText} >
+                    <Text style={panelStyles.percText} >
                         {' Motor: ' + value.toString() + '%'}
                     </Text>
                 </View>
                 <CustomSlider min={0} max={100} step={5} onChange={setValue}/>
+                <ConstantInput 
+                    constantName = { 'P' } 
+                    value = { pValue } 
+                    onChange = { onChange }
+                />
+                <ConstantInput 
+                    constantName = { 'I' } 
+                    value = { iValue } 
+                    onChange = { onChange }
+                />
+                <TouchableOpacity 
+                    onPress={onSubmit}
+                    style={panelStyles.button} 
+                >
+                    <Text style={panelStyles.textButton} >
+                        Establecer valores
+                    </Text>
+                </TouchableOpacity>
             </View>
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1, 
-        justifyContent: 'flex-start', 
-        backgroundColor: 'white',
-        alignItems: 'center',
-        padding: 10
-    },
-    title: {
-        textAlign: 'center',
-        fontSize: 30,
-        fontWeight: 'bold',
-        color: 'black',
-        paddingVertical: 20
-    },
-    percSliderWrapper: {
-        flexDirection: 'column',
-        alignItems: 'center',
-        paddingBottom: 30
-    },
-    percWrapper: {
-        flexDirection: 'row',
-        alignItems: 'center'
-    },
-    percText: {
-        textAlign: 'center',
-        fontSize: 25,
-        fontWeight: 'bold',
-        color: 'black'
-    },
-    img: {
-        alignSelf: 'center',
-        marginBottom: 60,
-        height: 100, 
-        width: 100
-    }
-})
 
 export default ClosedLoop;

@@ -7,7 +7,11 @@ const CustomSlider = ({ min, max, step, onChange }) => {
 
     return (
         <Slider
-            style={{width: parseInt(layout.width*0.75), height: 40}}
+            style={{
+                width: parseInt(layout.width*0.75), 
+                height: 30,
+                marginBottom: 40
+            }}
             minimumValue={min}
             maximumValue={max}
             step={step}
