@@ -8,7 +8,7 @@ const ConstantInput = ({ constantName, value, onChange }) => {
                 {constantName + ': '}
             </Text>
             <TextInput 
-                value = { value }
+                value = { String(value) }
                 style = { styles.input }
                 placeholder = { 'Constant ' + constantName }
                 keyboardType = 'numeric'
