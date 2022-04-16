@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from '@react-native-community/slider';
 import { useWindowDimensions } from "react-native";
 
-const CustomSlider = ({ min, max, step, onChange }) => {
+const CustomSlider = ({ min, max, step, value, onChange }) => {
     const layout = useWindowDimensions();
 
     return (
@@ -18,6 +18,7 @@ const CustomSlider = ({ min, max, step, onChange }) => {
             minimumTrackTintColor="tomato"
             maximumTrackTintColor="#000000"
             thumbTintColor='tomato'
+            value={parseInt(value) || 0}
             onValueChange={onChange}
             onSlidingComplete={onChange}
         />

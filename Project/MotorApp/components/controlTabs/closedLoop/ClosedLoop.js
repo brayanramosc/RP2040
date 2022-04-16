@@ -47,7 +47,7 @@ const ClosedLoop = () => {
                         {' Motor: ' + value.toString() + '%'}
                     </Text>
                 </View>
-                <CustomSlider min={0} max={100} step={5} onChange={setValue}/>
+                <CustomSlider min={0} max={100} step={5} value={value} onChange={setValue}/>
                 <ConstantInput 
                     constantName = { 'P' } 
                     value = { pValue } 
