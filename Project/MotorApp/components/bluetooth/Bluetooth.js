@@ -15,7 +15,7 @@ const Bluetooth = ({ navigation }) => {
         console.log(id);
         try {
             await BluetoothSerial.connect(id);
-            navigation.navigate('Monitoreo y control');
+            //navigation.navigate('Monitoreo y control');
         } catch (error) {
             console.log(error);
             Alert.alert(
