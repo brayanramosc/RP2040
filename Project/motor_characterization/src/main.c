@@ -2,6 +2,7 @@
 #include "events.h"
 #include "timer.h"
 #include "pwm.h"
+#include "uart_bt.h"
 
 int main(){
     // Initialization
@@ -12,6 +13,7 @@ int main(){
         while (!stdio_usb_connected());
     #endif
     pwm_setup();
+    uart_setup();
 
     // Check for timer
     while (!timer_init(TIMER_PERIOD_MS));

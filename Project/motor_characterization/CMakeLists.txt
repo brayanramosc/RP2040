@@ -22,6 +22,7 @@ add_executable(
         src/events.c
         src/timer.c
         src/pwm.c
+        src/uart_bt.c
 )
 target_include_directories(${PROJECT_NAME} PUBLIC ./)
 
@@ -43,6 +44,7 @@ target_link_libraries(
         ${PROJECT_NAME}
         pico_stdlib
         hardware_pwm
+        hardware_uart
         hardware_gpio
         hardware_clocks
         hardware_irq
