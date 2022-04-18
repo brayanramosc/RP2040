@@ -2,6 +2,7 @@
 #include "pico/stdlib.h"
 #include "hardware/pwm.h"
 #include "hardware/gpio.h"
+#include "hardware/clocks.h"
 #include "pwm.h"
 
 uint pwm_motor_slice_num;
