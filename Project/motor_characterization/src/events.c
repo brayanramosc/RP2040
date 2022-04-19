@@ -27,11 +27,9 @@ void events_controller(void) {
 			if (++counter == ONE_SECONDS_CNT) {
 				counter = 0;
 				freq = measure_frequency(PWM_GPIO_MEASURE);
-				duty = measure_duty_cycle(PWM_GPIO_MEASURE);
 
-				printf("Frecuencia real: %d KHz\n", clock_get_hz(clk_sys) / PWM_LEVEL_VALUE /1000);
-				printf("Duty: %f %%\n", duty*100);
-				printf("Frecuencia medida: %f KHz\n\n", freq);
+				//printf("Frecuencia real: %f KHz\n", clock_get_hz(clk_sys) / PWM_TOP);
+				printf("Frecuencia medida: %f Hz\n\n", freq);
 			}
 		}
 		if (EV_UART_RX) {
