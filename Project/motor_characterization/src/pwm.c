@@ -11,6 +11,8 @@ uint pwm_motor_chan;
 
 float measure_frequency (uint gpio) {
     uint16_t counter;
+    uint8_t zeroCount = 3;
+    uint16_t delay = 10;
 
     pwm_config cfg = pwm_get_default_config();
     pwm_config_set_clkdiv_mode(&cfg, PWM_DIV_B_RISING);
@@ -18,24 +20,22 @@ float measure_frequency (uint gpio) {
     pwm_init(pwm_measure_slice_num, &cfg, false);
     gpio_set_function(gpio, GPIO_FUNC_PWM);
 
-    pwm_set_enabled(pwm_measure_slice_num, true);
-    sleep_ms(10);
-    pwm_set_enabled(pwm_measure_slice_num, false);
-
-    /*for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < zeroCount; i++) {
         pwm_set_enabled(pwm_measure_slice_num, true);
-        sleep_ms(1);
+        sleep_ms(delay);
         pwm_set_enabled(pwm_measure_slice_num, false);
-        counter = pwm_get_counter(pwm_measure_slice_num);
-        printf("Counter loop: %d\n", counter);
-    }*/
 
-    counter = pwm_get_counter(pwm_measure_slice_num);
+        counter = pwm_get_counter(pwm_measure_slice_num);
+        if (counter != 0) break;
+        delay *= 10;
+    }
+
     float freq = counter * 100;
     
     printf("Counter: %d\n", counter);
+    printf("RPMs: %d\n", (uint32_t)((freq * 60) / SLOTS));
 
-    return freq;
+    return freq / SLOTS;
 }
 
 void pwm_setup (void) {
@@ -56,5 +56,6 @@ void pwm_setup (void) {
 }
 
 void pwm_change_level(uint16_t level) {
+    printf("Nivel: %d\n", level);
     pwm_set_chan_level(pwm_motor_slice_num, PWM_MOTOR_CH, level);
 }
