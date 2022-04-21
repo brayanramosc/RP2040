@@ -6,11 +6,13 @@
 #include "general.h"
 #include "timer.h"
 #include "pwm.h"
+#include "uart_bt.h"
 
 volatile _events_str _events;
 
 uint8_t counter = 0;
 float freq = 0;
+float duty = 0;
 
 // Events controller
 void events_controller(void) {
@@ -21,17 +23,21 @@ void events_controller(void) {
 
 		if (EV_TIMER) {
 			EV_TIMER = false;
-			if (isWaitingForByte) waitForByteCnt++;
 
-			if (++counter == 2) {
+			if (++counter == ONE_SECONDS_CNT) {
 				counter = 0;
 				freq = measure_frequency(PWM_GPIO_MEASURE);
-
-				printf("Frecuencia real: %d KHz\n\n", clock_get_hz(clk_sys) / PWM_LEVEL_VALUE /1000);
-				printf("Frecuencia medida: %f Hz\n", freq);
-				printf("Frecuencia medida: %f KHz\n\n", freq/1000);
+				printf("Frecuencia medida: %f Hz\n\n", freq);
 			}
-			
+		}
+		if (EV_UART_RX) {
+			EV_UART_RX = false;
+			read_data_from_uart();
+
+			if(isValidFrame) {
+				isValidFrame = false;
+				pwm_change_level((uint16_t)((uint32_t)(dataBuffer[0]*PWM_TOP/100)));
+			}
 		}
 	}
 }

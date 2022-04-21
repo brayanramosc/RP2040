@@ -22,10 +22,9 @@ extern uint8_t waitForByteCnt;
 // Events definitions
 #define PENDING_EVENTS  _events.reg
 #define EV_TIMER        _events.flags.flag0
-#define EV_ADC_LIGHT    _events.flags.flag1
-#define EV_ADC_TEMP     _events.flags.flag2
-#define EV_UART_RX      _events.flags.flag3
-#define EV_UART_TX      _events.flags.flag4
+#define EV_UART_RX      _events.flags.flag1
+#define EV_UART_TX      _events.flags.flag2
+#define EV_OPEN_LOOP    _events.flags.flag3
 
 // Value for run mode
 #define RUN_MODE        DEBUG

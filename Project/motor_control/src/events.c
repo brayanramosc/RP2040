@@ -14,12 +14,13 @@ bool	readDataFromUART = false;
 uint8_t chIdx			= 0;
 
 void write_data(void) {
+	uint8_t chIdx = 0;
+	
 	while (chIdx < 4) {
 		while (is_fifo_full());
 		put_in_fifo (dataBuffer[chIdx]);
 		chIdx++;
 	}
-	chIdx = 0;
 }
 
 // Events controller
@@ -34,7 +35,7 @@ void events_controller(void) {
 			if (isWaitingForByte) waitForByteCnt++;
 		}
 
-		if (EV_UART_RX) {
+		/*if (EV_UART_RX) {
 			EV_UART_RX = false;
 			read_data_from_uart();
 
@@ -53,6 +54,6 @@ void events_controller(void) {
 				dataBuffer[3] = (HEADER_BYTE + dataBuffer[1] + dataBuffer[2]) & 0xFF;
 				write_data();
 			}
-		}
+		}*/
 	}
 }

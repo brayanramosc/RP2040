@@ -12,15 +12,13 @@
 
 // Commands values
 #define HEADER_BYTE         0x24
-#define MONITOR_BYTE        0x00
+#define MONITOR_BYTE        0x40
 #define CONTROL_BYTE        0x80
-#define LIGHT_BYTE          0x02
-#define TEMPERATURE_BYTE    0x01
-#define LED_BYTE            0x40
-#define MOTOR_BYTE          0x41
+#define OPEN_LOOP_BYTE      0x20
+#define CLOSED_LOOP_BYTE    0x21
 
 // FIFO values
-#define FIFO_SIZE           128
+#define FIFO_SIZE           5
 
 typedef struct {
     volatile uint8_t buff[FIFO_SIZE];
@@ -31,8 +29,8 @@ typedef struct {
 extern volatile _fifo_t tx_fifo;
 
 // Help values
-#define GET_MODE(X)         ((X) & 0x80)
-#define GET_ID(X)           ((X) & 0x7F)
+#define GET_MODE(X)         ((X) & 0xC0)
+#define GET_ID(X)           ((X) & 0x3F)
 
 // Extern variables
 extern bool isWaitingForByte;

@@ -8,7 +8,6 @@
 #include "uart_bt.h"
 
 volatile uint8_t ch;
-bool isWaitingForByte = false;
 uint8_t hex[] = {'0', '0'};
 uint8_t dataBuffer[4];
 uint8_t ch_idx = 0;
@@ -41,63 +40,51 @@ bool is_fifo_empty(void) {
 void read_data_from_uart (void) {
     switch (charState) {
         case ST_START:
-            if (ch == '$') {
-                charState = ST_GET_MODE;
-                isWaitingForByte = true;
-            }
+            if (ch == '$') charState = ST_GET_MODE;
             break;
 
         case ST_GET_MODE:
-            if (waitForByteCnt <= ONE_SECONDS_CNT) {
-                hex[ch_idx] = ch;
-                if (ch_idx == 1) {
-                    ch_idx = 0;
-                    waitForByteCnt = 0;
-                    
-                    dataBuffer[0] = HEADER_BYTE;
-                    dataBuffer[1] = (int)strtol(hex, NULL, 16);
-                    mode = GET_MODE(dataBuffer[1]);
-                    id = GET_ID(dataBuffer[1]);
-                    printf("\n Mode: %d, %X \n", mode, mode);
-                    printf("ID: %d, %X \n", id, id);
-                    charState = ST_GET_VALUE;
-                } else ch_idx++;
-            } else charState = ST_START;
+            hex[ch_idx] = ch;
+            if (ch_idx == 1) {
+                ch_idx = 0;
+                
+                dataBuffer[0] = HEADER_BYTE;
+                dataBuffer[1] = (int)strtol(hex, NULL, 16);
+                mode = GET_MODE(dataBuffer[1]);
+                id = GET_ID(dataBuffer[1]);
+
+                printf("\n Mode: %d, %X \n", mode, mode);
+                printf("ID: %d, %X \n", id, id);
+
+                charState = ST_GET_VALUE;
+            } else ch_idx++;
             
             break;
 
         case ST_GET_VALUE:
-            isWaitingForByte = true;
-            if (waitForByteCnt <= ONE_SECONDS_CNT) {
-                hex[ch_idx] = ch;
-                if (ch_idx == 1) {
-                    ch_idx = 0;
-                    waitForByteCnt = 0;
+            hex[ch_idx] = ch;
+            if (ch_idx == 1) {
+                ch_idx = 0;
 
-                    dataBuffer[2] = (int)strtol(hex, NULL, 16);
-                    printf("value: %d, %X \n", dataBuffer[2], dataBuffer[2]);
-                    charState = ST_GET_CS;
-                } else ch_idx++;
-            } else charState = ST_START;
+                dataBuffer[2] = (int)strtol(hex, NULL, 16);
+                printf("value: %d, %X \n", dataBuffer[2], dataBuffer[2]);
+                charState = ST_GET_CS;
+            } else ch_idx++;
             
             break;
 
         case ST_GET_CS:
-            isWaitingForByte = true;
-            if (waitForByteCnt <= ONE_SECONDS_CNT) {
-                hex[ch_idx] = ch;
-                if (ch_idx == 1) {
-                    ch_idx = 0;
-                    isWaitingForByte = false;
-                    waitForByteCnt = 0;
+            hex[ch_idx] = ch;
+            if (ch_idx == 1) {
+                ch_idx = 0;
 
-                    dataBuffer[3] = (int)strtol(hex, NULL, 16);
-                    printf("Checksum: %d, %X \n", dataBuffer[3], dataBuffer[3]);
-                    isValidFrame = ((HEADER_BYTE + dataBuffer[1] + dataBuffer[2]) & 0xFF) == dataBuffer[3] ? true : false;
-                    printf("Frame is: %d\n\n", isValidFrame);
-                    charState = ST_START;
-                } else ch_idx++;
-            } else charState = ST_START;
+                dataBuffer[3] = (int)strtol(hex, NULL, 16);
+                isValidFrame = ((HEADER_BYTE + dataBuffer[1] + dataBuffer[2]) & 0xFF) == dataBuffer[3] ? true : false;
+                
+                printf("Checksum: %d, %X \n", dataBuffer[3], dataBuffer[3]);
+                printf("Frame is: %d\n\n", isValidFrame);
+                charState = ST_START;
+            } else ch_idx++;
 
             break;
         

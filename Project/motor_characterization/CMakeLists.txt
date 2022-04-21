@@ -43,8 +43,8 @@ pico_add_extra_outputs(${PROJECT_NAME})
 target_link_libraries(
         ${PROJECT_NAME}
         pico_stdlib
-        hardware_uart
         hardware_pwm
+        hardware_uart
         hardware_gpio
         hardware_clocks
         hardware_irq
