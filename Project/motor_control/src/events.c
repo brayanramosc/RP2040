@@ -14,12 +14,13 @@ bool	readDataFromUART = false;
 uint8_t chIdx			= 0;
 
 void write_data(void) {
+	uint8_t chIdx = 0;
+	
 	while (chIdx < 4) {
 		while (is_fifo_full());
 		put_in_fifo (dataBuffer[chIdx]);
 		chIdx++;
 	}
-	chIdx = 0;
 }
 
 // Events controller
