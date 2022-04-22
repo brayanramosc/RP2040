@@ -14,7 +14,7 @@ import motor_icon from '../../../assets/motor.png';
 import { panelStyles } from './styles';
 
 // constants
-import { HEADER_SIGN, HEADER_BYTE, CONTROL_BYTE, OPEN_LOOP_BYTE } from '../constants';
+import { HEADER_SIGN, HEADER_BYTE, CONTROL_BYTE, OPEN_LOOP_BYTE } from '../../constants';
 
 let globalVal = 0;
 

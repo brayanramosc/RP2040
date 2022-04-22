@@ -16,9 +16,9 @@ const MotorInformation = () => {
                 style={styles.img}
             />
             <Feature name={'Voltaje máxima'} value={'6 V'} />
-            <Feature name={'Velocidad máxima'} value={'110 RPM'} />
+            <Feature name={'Velocidad máxima'} value={'200 RPM'} />
             <Feature name={'Velocidad mínima'} value={'10 RPM'} />
-            <Feature name={'Rango de control'} value={'50 RPM - 90 RPM'} />
+            <Feature name={'Rango de control'} value={'50 RPM - 160 RPM'} />
         </View>
     )
 }
