@@ -19,7 +19,6 @@ void getBytesTask (void * pvParams) {
     uint8_t ID = ((task_t *)pvParams)->id;
     //uint32_t delay = ((task_t *)pvParams)->delay;
     SemaphoreHandle_t * xMtx = ((task_t *)pvParams)->dmutex;
-
     uint8_t cnt = 0;
 
     while (true) {
@@ -27,9 +26,12 @@ void getBytesTask (void * pvParams) {
             EV_UART_RX = false;
 			read_data_from_uart();
 
-            if (++cnt == 4) {
+            if (++cnt == 7) {
                 cnt = 0;
-                if (id == OPEN_LOOP_BYTE) EV_OPEN_LOOP = true;
+                if (id == OPEN_LOOP_BYTE) {
+                    EV_OPEN_LOOP = true;
+                    printf("Data Task \n");
+                }
             }
 		}
     }  
@@ -43,7 +45,8 @@ void openLoopTask (void * pvParams) {
     while (true) {
         //vTaskDelay(delay);
         if (EV_OPEN_LOOP) {
-            printf("Open Loop Task %s executing on core %d\n", pcTaskGetName(NULL), get_core_num());
+            EV_OPEN_LOOP = false;
+            printf("Open Loop Task \n");
 
             if(isValidFrame && mode == CONTROL_BYTE ) {
                 isValidFrame = false;
@@ -54,7 +57,6 @@ void openLoopTask (void * pvParams) {
 }
 
 void createTasks (void) {
-    printf("Creando tareas! \n\n");
     BaseType_t xReturned;
 
     void (*ptrArray[2])(void *) = {getBytesTask, openLoopTask};
@@ -63,7 +65,7 @@ void createTasks (void) {
     char taskNames[] = "GBTask\nOLTask\n";
     task_t taskArray[2];
 
-    for (int i = 0; i < 1; i++) {
+    for (int i = 0; i < 2; i++) {
         taskArray[i].id = i;
         taskArray[i].delay = taskDelay[i];
         taskArray[i].dmutex = NULL;
@@ -73,8 +75,6 @@ void createTasks (void) {
             printf("%s created succesfully\n", &taskNames[i*7]);
     }
 
-    printf("Core %d\n", get_core_num());
     vTaskStartScheduler();
-
     panic_unsupported();
 }

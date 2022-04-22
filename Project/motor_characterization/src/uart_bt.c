@@ -34,7 +34,7 @@ void read_data_from_uart (void) {
                 ch_idx = 0;
 
                 dataBuffer[0] = (int)strtol(hex, NULL, 16);
-                printf("value: %d, %X \n", dataBuffer[0], dataBuffer[0]);
+                //printf("value: %d, %X \n", dataBuffer[0], dataBuffer[0]);
                 charState = ST_GET_CS;
             } else ch_idx++;
             
@@ -46,9 +46,9 @@ void read_data_from_uart (void) {
                 ch_idx = 0;
 
                 dataBuffer[1] = (int)strtol(hex, NULL, 16);
-                printf("Checksum: %d, %X \n", dataBuffer[1], dataBuffer[1]);
+                //printf("Checksum: %d, %X \n", dataBuffer[1], dataBuffer[1]);
                 isValidFrame = ((HEADER_BYTE + dataBuffer[0]) & 0xFF) == dataBuffer[1] ? true : false;
-                printf("Frame is: %d\n\n", isValidFrame);
+                //printf("Frame is: %d\n\n", isValidFrame);
                 charState = ST_START;
             } else ch_idx++;
 

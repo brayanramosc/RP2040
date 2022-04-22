@@ -22,13 +22,15 @@ extern volatile _events_str _events;
 #define PENDING_EVENTS  _events.reg
 #define EV_TIMER        _events.flags.flag0
 #define EV_UART_RX      _events.flags.flag1
+#define EV_ADC          _events.flags.flag2
+#define EV_EDGE         _events.flags.flag3
 
 // Value for run mode
 #define RUN_MODE        DEBUG
 
 // Utils
-#define HALF_SECOND_CNT     50   // 0.5 Seconds
-#define ONE_SECONDS_CNT     100  // 1 Second
+#define HALF_SECOND_CNT     500   // 0.5 Seconds
+#define ONE_SECONDS_CNT     1000  // 1 Second
 
 // Functions
 void write_data(void);

@@ -15,6 +15,10 @@
 
 #define SLOTS               20
 
+extern uint16_t levelValue;
+extern uint64_t t1;
+extern uint64_t t2;
+
 // Functions
 void pwm_setup (void);
 float measure_frequency (uint);

@@ -56,5 +56,6 @@ void pwm_setup (void) {
 }
 
 void pwm_change_level(uint16_t level) {
+    printf("Level: %d\n", level);
     pwm_set_chan_level(pwm_motor_slice_num, PWM_MOTOR_CH, level);
 }

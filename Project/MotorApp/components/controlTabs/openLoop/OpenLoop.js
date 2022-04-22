@@ -14,7 +14,9 @@ import motor_icon from '../../../assets/motor.png';
 import { panelStyles } from './styles';
 
 // constants
-import { HEADER_SIGN, HEADER_BYTE } from '../constants';
+import { HEADER_SIGN, HEADER_BYTE, CONTROL_BYTE, OPEN_LOOP_BYTE } from '../constants';
+
+let globalVal = 0;
 
 const OpenLoop = () => {
     const [auxValue, setAuxValue] = useState(0);
@@ -25,15 +27,24 @@ const OpenLoop = () => {
         return val.length == 1 ? '0' + val : val;
     }
 
-    const sendData = async() => {
+    const sendData = async(/*val*/) => {
         const val = parseInt(auxValue);
         const checksum = (HEADER_BYTE + val) & 0xFF;
         const block = HEADER_SIGN + chekLength(val) + chekLength(checksum);
+        //const checksum = (HEADER_BYTE + (CONTROL_BYTE | OPEN_LOOP_BYTE) + val) & 0xFF;
+        //const block = HEADER_SIGN + chekLength(CONTROL_BYTE | OPEN_LOOP_BYTE) + chekLength(val) + chekLength(checksum);
+        //console.log("Trama: ", val);
         console.log("Trama: ", block);
         await BluetoothSerial.write(block);
     }
 
-    const onChange = (val, _) => setAuxValue(val)
+    const onTextChange = (val, _) => setAuxValue(val)
+
+    const onChange = (val, _) => {
+        globalVal = val;
+        setValue(val);
+        sendData(globalVal);
+    }
 
     const onSubmit = () => {
         if (auxValue !== '') {
@@ -57,7 +68,7 @@ const OpenLoop = () => {
                     <ConstantInput 
                         constantName = { '%' } 
                         value = { auxValue } 
-                        onChange = { onChange }
+                        onChange = { onTextChange }
                     />
                     <TouchableOpacity 
                         onPress={onSubmit}
@@ -76,7 +87,7 @@ const OpenLoop = () => {
                         {' Motor: ' + value.toString() + '%'}
                     </Text>
                 </View>
-                <CustomSlider min={0} max={100} step={5} value={value} onChange={setValue}/>
+                <CustomSlider min={0} max={100} step={5} value={value} onChange={onChange}/>
             </View>
         </View>
     )
