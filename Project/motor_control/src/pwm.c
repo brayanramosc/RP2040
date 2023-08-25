@@ -3,39 +3,18 @@
 #include "hardware/pwm.h"
 #include "hardware/gpio.h"
 #include "pwm.h"
+#include "events.h"
 
 uint pwm_motor_slice_num;
 uint pwm_measure_slice_num;
 uint pwm_motor_chan;
+uint64_t t1 = 0;
+uint64_t t2 = 0;
 
-float measure_frequency (uint gpio) {
-    uint16_t counter;
-    uint8_t zeroCount = 3;
-    uint16_t delay = 10;
-
-    pwm_config cfg = pwm_get_default_config();
-    pwm_config_set_clkdiv_mode(&cfg, PWM_DIV_B_RISING);
-    pwm_config_set_clkdiv(&cfg, PWM_CLK_DIV);
-    pwm_init(pwm_measure_slice_num, &cfg, false);
-    gpio_set_function(gpio, GPIO_FUNC_PWM);
-
-    for (int i = 0; i < zeroCount; i++) {
-        pwm_set_enabled(pwm_measure_slice_num, true);
-        sleep_ms(delay);
-        pwm_set_enabled(pwm_measure_slice_num, false);
-
-        counter = pwm_get_counter(pwm_measure_slice_num);
-        if (counter != 0) break;
-        delay *= 10;
-    }
-
-    float freq = counter * 100;
-    
-    printf("Counter: %d\n", counter);
-    printf("RPMs: %f\n", (freq * 60) / SLOTS);
-    printf("RPMs: %d\n", (uint32_t)((freq * 60) / SLOTS));
-
-    return freq / SLOTS;
+void callback (uint gpio, uint32_t events) {
+    EV_EDGE = true;
+    t1 = t2;
+    t2 = time_us_64();
 }
 
 void pwm_setup (void) {
@@ -47,6 +26,13 @@ void pwm_setup (void) {
     pwm_measure_slice_num = pwm_gpio_to_slice_num(PWM_GPIO_MEASURE);
     pwm_motor_chan = pwm_gpio_to_channel(PWM_GPIO_MOTOR);
 
+    // Init pin
+    gpio_init(PWM_GPIO_MEASURE);
+    gpio_set_dir(PWM_GPIO_MEASURE, GPIO_IN);
+
+    // Configure GPIO Interrupt
+    gpio_set_irq_enabled_with_callback(PWM_GPIO_MEASURE, GPIO_IRQ_EDGE_RISE, true, &callback);
+
     // Set frequency and duty
     pwm_set_wrap(pwm_motor_slice_num, PWM_TOP);
     pwm_set_chan_level(pwm_motor_slice_num, pwm_motor_chan, PWM_LEVEL_VALUE);
@@ -56,6 +42,6 @@ void pwm_setup (void) {
 }
 
 void pwm_change_level(uint16_t level) {
-    printf("Level: %d\n", level);
+    printf("Level: %d", level);
     pwm_set_chan_level(pwm_motor_slice_num, PWM_MOTOR_CH, level);
 }

@@ -16,9 +16,13 @@
 #define CONTROL_BYTE        0x80
 #define OPEN_LOOP_BYTE      0x20
 #define CLOSED_LOOP_BYTE    0x21
+#define P_VALUE_BYTE        0x22
+#define I_VALUE_BYTE        0x23
+#define CURRENT_VALUE_BYTE  0x01
+#define ERROR_BYTE          0x02
 
 // FIFO values
-#define FIFO_SIZE           5
+#define FIFO_SIZE           16
 
 typedef struct {
     volatile uint8_t buff[FIFO_SIZE];
@@ -43,6 +47,7 @@ extern bool isValidFrame;
 
 // Functions
 void uart_setup (void);
+void write_data(void);
 bool is_fifo_full(void);
 bool is_fifo_empty(void);
 void put_in_fifo (uint8_t);

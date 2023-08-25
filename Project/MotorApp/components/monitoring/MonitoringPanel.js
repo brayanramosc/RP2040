@@ -67,21 +67,19 @@ const MonitoringPanel = () => {
 
     const readData = async() => {
         const data = await BluetoothSerial.readFromDevice();
-        console.log("Data: ", data);
+        //console.log("Data: ", data);
         FSM(data);
     }
     
     useEffect(() => {
-        //const lightInterval = setInterval(async() => {
+        const interval = setInterval(async() => {
             readData();
-            console.log("Hola!");
-        //}, 1000);
+        }, 1);
 
-        /*return () => {
-            clearInterval(lightInterval);
-            clearInterval(temperatureInterval);
-        };*/
-    }/*, []*/)
+        return () => {
+            clearInterval(interval);
+        };
+    }, [])
 
     return (
         <View style = { styles.container } >

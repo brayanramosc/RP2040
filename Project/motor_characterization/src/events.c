@@ -64,7 +64,7 @@ void events_controller(void) {
 				printf("Obteniendo valores!\n");
 				isSecondStepComplete = false;
 				
-				for (uint16_t i = 0; i < 2000; i++) {
+				for (uint16_t i = 0; i < 1000; i++) {
 					printf("%f,", data[i]);
 				}
 			}

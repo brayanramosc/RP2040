@@ -29,6 +29,17 @@ void uart_handler(void) {
     if(uart_is_writable(UART_ID)) send_data();
 }
 
+void write_data(void) {
+    uint8_t chIdx = 0;
+    
+	while (chIdx < 4) {
+        printf("Value: %d\n", dataBuffer[chIdx]);
+		while (is_fifo_full());
+		put_in_fifo (dataBuffer[chIdx]);
+		chIdx++;
+	}
+}
+
 bool is_fifo_full(void) {
     return (tx_fifo.ptr_put + 1) == tx_fifo.ptr_get || (tx_fifo.ptr_put - tx_fifo.ptr_get) == (FIFO_SIZE - 1);
 }

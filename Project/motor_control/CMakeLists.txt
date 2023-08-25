@@ -21,7 +21,6 @@ if (TARGET tinyusb_device)
                 ${PROJECT_NAME}
                 src/main.c
                 src/tasks.c
-                src/events.c
                 src/timer.c
                 src/pwm.c
                 src/uart_bt.c
