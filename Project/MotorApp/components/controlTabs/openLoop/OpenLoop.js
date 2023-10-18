@@ -16,8 +16,6 @@ import { panelStyles } from './styles';
 // constants
 import { HEADER_SIGN, HEADER_BYTE, CONTROL_BYTE, OPEN_LOOP_BYTE } from '../../constants';
 
-let globalVal = 0;
-
 const OpenLoop = () => {
     const [auxValue, setAuxValue] = useState(0);
     const [value, setValue] = useState(0);
@@ -27,13 +25,13 @@ const OpenLoop = () => {
         return val.length == 1 ? '0' + val : val;
     }
 
-    const sendData = async(/*val*/) => {
-        const val = parseInt(auxValue);
-        const checksum = (HEADER_BYTE + val) & 0xFF;
-        const block = HEADER_SIGN + chekLength(val) + chekLength(checksum);
-        //const checksum = (HEADER_BYTE + (CONTROL_BYTE | OPEN_LOOP_BYTE) + val) & 0xFF;
-        //const block = HEADER_SIGN + chekLength(CONTROL_BYTE | OPEN_LOOP_BYTE) + chekLength(val) + chekLength(checksum);
-        //console.log("Trama: ", val);
+    const sendData = async(val) => {
+        //const val = parseInt(auxValue);
+        //const checksum = (HEADER_BYTE + val) & 0xFF;
+        //const block = HEADER_SIGN + chekLength(val) + chekLength(checksum);
+        const checksum = (HEADER_BYTE + (CONTROL_BYTE | OPEN_LOOP_BYTE) + val) & 0xFF;
+        const block = HEADER_SIGN + chekLength(CONTROL_BYTE | OPEN_LOOP_BYTE) + chekLength(val) + chekLength(checksum);
+        console.log("Trama: ", val);
         console.log("Trama: ", block);
         await BluetoothSerial.write(block);
     }
@@ -41,15 +39,14 @@ const OpenLoop = () => {
     const onTextChange = (val, _) => setAuxValue(val)
 
     const onChange = (val, _) => {
-        globalVal = val;
         setValue(val);
-        sendData(globalVal);
+        sendData(val);
     }
 
     const onSubmit = () => {
         if (auxValue !== '') {
             setValue(auxValue);
-            sendData();
+            sendData(parseInt(auxValue));
         }
     }
 

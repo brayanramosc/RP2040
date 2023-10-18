@@ -25,16 +25,10 @@ extern uint8_t waitForByteCnt;
 #define EV_UART_RX      _events.flags.flag1
 #define EV_UART_TX      _events.flags.flag2
 #define EV_OPEN_LOOP    _events.flags.flag3
+#define EV_CLOSED_LOOP  _events.flags.flag4
+#define EV_EDGE         _events.flags.flag5
 
 // Value for run mode
 #define RUN_MODE        DEBUG
-
-// Utils
-#define HALF_SECOND_CNT     5   // 0.5 Seconds
-#define ONE_SECONDS_CNT     10  // 1 Second
-
-// Functions
-void write_data(void);
-void events_controller(void);
 
 #endif
