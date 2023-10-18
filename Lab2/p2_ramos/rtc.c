@@ -9,6 +9,7 @@
 
 char datetime_buf[256];
 char *datetime_str = &datetime_buf[0];
+char lcd_datatime_format[17];
 
 // Current time struct
 datetime_t t = {
@@ -48,14 +49,13 @@ void set_alarm(void) {
 
 char* get_date_and_time_str(void) {
     rtc_get_datetime(&t);
-    char *datetime_str = malloc(sizeof (char) * 17);
 
-    snprintf(datetime_str, 
+    snprintf(lcd_datatime_format, 
             17, 
             "%02d/%02d/%d %02d:%02d", 
             t.day, t.month, t.year, t.hour, t.min);
 
-    return datetime_str;
+    return lcd_datatime_format;
 }
 
 // Set current time

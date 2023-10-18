@@ -1,9 +1,9 @@
 #include "pico/stdlib.h"
 #include "events.h"
-#include "rtc.h"
-#include "kbi.h"
 #include "timer.h"
-#include "lcd.h"
+#include "pwm.h"
+#include "uart_bt.h"
+#include "adc.h"
 
 int main(){
     // Initialization
@@ -13,13 +13,12 @@ int main(){
     #if RUN_MODE == DEBUG
         while (!stdio_usb_connected());
     #endif
-
-    kbi_init();
-    rtc_setup();
-    lcd_init();
+    pwm_setup();
+    adc_setup();
+    uart_setup();
 
     // Check for timer
-    while (!timer_init(MAIN_PERIOD));
+    while (!timer_init(TIMER_PERIOD_MS));
 
     // Infinite loop
     events_controller();
